@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Array
 {
-    class MergeSortedArray
+    class Merge_Sorted_Array
     {
         /// <summary>
         /// Merge Sorted Array
