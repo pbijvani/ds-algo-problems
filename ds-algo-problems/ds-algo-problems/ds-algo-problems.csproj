@@ -43,23 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array\Amazon_que_array_find_2_element_Total_close_to_given_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
-    <Compile Include="Array\Max_Contiguous_Sub_Array.cs" />
+    <Compile Include="Contiguous.Array.Problems\Contiguous_Binary_Array_With_equal_0_1.cs" />
+    <Compile Include="Array\Convert_number_to_array.cs" />
+    <Compile Include="Contiguous.Array.Problems\Max_Contiguous_Sub_Array.cs" />
     <Compile Include="Array\Merge_Sorted_Array.cs" />
     <Compile Include="Array\Number_In_ArrayPlusOne.cs" />
     <Compile Include="Array\Remove_Duplicate_From_Array_Max_2_Allowed.cs" />
     <Compile Include="Array\Sorted_Array_Find_Two_Number_That_add_upto_given_number.cs" />
+    <Compile Include="Contiguous.Array.Problems\Min_length_of_Contiguous_subarray_with_Sum_greated_than_gives_number_s.cs" />
     <Compile Include="Domain\Graph.cs" />
     <Compile Include="Domain\Node.cs" />
     <Compile Include="Domain\TreeNode.cs" />
+    <Compile Include="Graph.Problems\Course_Schedules.cs" />
     <Compile Include="LinkedList\Sorted_List_To_Binary_Search_Tree.cs" />
     <Compile Include="LinkedList\Tow_linked_list_Addition.cs" />
-    <Compile Include="Math\AddBinaryNumbers.cs" />
+    <Compile Include="Math\Add_Binary_Numbers.cs" />
     <Compile Include="Math\fibonacci.cs" />
+    <Compile Include="Math\Prime_Number.cs" />
+    <Compile Include="Matrix\2D_Array_traversal_Amazon_que.cs" />
     <Compile Include="Matrix\Number_of_Islands.cs" />
     <Compile Include="Problems\Best_Time_To_Buy_And_Sell_Stock.cs" />
     <Compile Include="Problems\Excel_sheet_Column_title.cs" />
+    <Compile Include="Problems\Movies_In_Flight.cs" />
     <Compile Include="Problems\Tow_Dimension_Get_two_closest_points.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
