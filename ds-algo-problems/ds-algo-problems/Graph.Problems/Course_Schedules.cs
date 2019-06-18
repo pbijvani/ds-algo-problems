@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ds_algo_problems.Graph.Problems
+namespace ds_algo_problems.Graph1.Problems
 {
     class Course_Schedules
     {

@@ -19,7 +19,7 @@ namespace ds_algo_problems.Tree
         {
             if (root == null) return true;
 
-            if (Math.Abs(GetHeight(root.left) - GetHeight(root.right)) < 2)
+            if (System.Math.Abs(GetHeight(root.left) - GetHeight(root.right)) < 2)
             {
                 return this.IsBalancedBinaryTree(root.left) && this.IsBalancedBinaryTree(root.right);
             }
@@ -36,7 +36,7 @@ namespace ds_algo_problems.Tree
             var leftHeight = GetHeight(root.left);
             var rightHeight = GetHeight(root.right);
 
-            return Math.Max(leftHeight, rightHeight) + 1;
+            return System.Math.Max(leftHeight, rightHeight) + 1;
 
         }
 
@@ -52,7 +52,7 @@ namespace ds_algo_problems.Tree
             var right = IsBalancedHelper(root.right);
 
             if (left == -1 || right == -1) return false;
-            if (Math.Abs(left - right) >= 2) return false;
+            if (System.Math.Abs(left - right) >= 2) return false;
 
             return true;
         }
@@ -65,9 +65,9 @@ namespace ds_algo_problems.Tree
             var right = IsBalancedHelper(root.right);
 
             if (left == -1 || right == -1) return -1;
-            if (Math.Abs(left - right) >= 2) return -1;
+            if (System.Math.Abs(left - right) >= 2) return -1;
 
-            return Math.Max(left, right) + 1;
+            return System.Math.Max(left, right) + 1;
         }
     }
 }
