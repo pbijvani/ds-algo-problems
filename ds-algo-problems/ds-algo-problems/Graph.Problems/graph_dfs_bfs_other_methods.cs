@@ -219,7 +219,7 @@ namespace ds_algo_problems.Graph1.Problems
                             }
                             else
                             {
-                                distance[edge.To] = Math.Min(distance[edge.To].Value, newDistance.Value);
+                                distance[edge.To] = System.Math.Min(distance[edge.To].Value, newDistance.Value);
                             }
                         }
                     }

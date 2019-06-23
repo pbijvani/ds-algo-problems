@@ -126,12 +126,21 @@
     <Compile Include="Tree\Is_Same_Tree.cs" />
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
+    <Compile Include="Tree\zig_zag_traversal.cs" />
+    <Compile Include="_Modrate\Array\tow_array_min_difference.cs" />
+    <Compile Include="_Modrate\Int\factorial_count_trailing_zero.cs" />
+    <Compile Include="_Modrate\Int\max_of_two_number_without_if_else.cs" />
+    <Compile Include="_Modrate\Int\multiply_subtract_divide_using_only_add_operator.cs" />
+    <Compile Include="_Modrate\Int\number_say_in_english.cs" />
+    <Compile Include="_Modrate\Int\swap_without_temp_var.cs" />
+    <Compile Include="_Modrate\Matrix\tic_tac_win.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Other\" />
+    <Folder Include="Print\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,7 +22,7 @@ namespace ds_algo_problems.Tree
             var left = MaxDepthOfBinaryTree(root.left);
             var right = MaxDepthOfBinaryTree(root.right);
 
-            return Math.Max(left, right) + 1;
+            return System.Math.Max(left, right) + 1;
         }
     }
 }

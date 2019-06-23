@@ -10,6 +10,7 @@ namespace ds_algo_problems
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
