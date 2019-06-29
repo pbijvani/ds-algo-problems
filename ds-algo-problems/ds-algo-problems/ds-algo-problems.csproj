@@ -128,6 +128,7 @@
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
     <Compile Include="Tree\zig_zag_traversal.cs" />
     <Compile Include="_Modrate\Array\contigious_subarray.cs" />
+    <Compile Include="_Modrate\Array\pairs_with_given_sum.cs" />
     <Compile Include="_Modrate\Array\sub_sort.cs" />
     <Compile Include="_Modrate\Array\swap_element_to_get_equal_sum.cs" />
     <Compile Include="_Modrate\Array\tow_array_min_difference.cs" />
@@ -137,9 +138,11 @@
     <Compile Include="_Modrate\Int\multiply_subtract_divide_using_only_add_operator.cs" />
     <Compile Include="_Modrate\Int\number_say_in_english.cs" />
     <Compile Include="_Modrate\Int\swap_without_temp_var.cs" />
+    <Compile Include="_Modrate\Matrix\ant_infinite_grid.cs" />
     <Compile Include="_Modrate\Matrix\pond_size.cs" />
     <Compile Include="_Modrate\Matrix\tic_tac_win.cs" />
     <Compile Include="_Modrate\permutation_combination\cell_phone_numeric_keypad.cs" />
+    <Compile Include="_Modrate\randm_number\rand5_to_rand7.cs" />
     <Compile Include="_Modrate\String\pattern_matching.cs" />
     <Compile Include="_Modrate\String\slot_game.cs" />
   </ItemGroup>
