@@ -85,6 +85,7 @@
     <Compile Include="Math\Prime_Number.cs" />
     <Compile Include="Matrix\2D_Array_traversal_Amazon_que.cs" />
     <Compile Include="Matrix\create_spiral_matrix.cs" />
+    <Compile Include="Matrix\matrix_largest_possible_square_of_1.cs" />
     <Compile Include="Matrix\Number_of_Islands.cs" />
     <Compile Include="Matrix\rotate_matrix.cs" />
     <Compile Include="Matrix\Set_0_to_row_and_col_if_element_is_0.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Problems\Excel_sheet_Column_title.cs" />
     <Compile Include="Problems\Movies_In_Flight.cs" />
     <Compile Include="DynamicPrograming\Parentheses_Prob.cs" />
+    <Compile Include="Problems\overlaping_rectangles.cs" />
     <Compile Include="Problems\Pascals_Triangle.cs" />
     <Compile Include="Problems\tower_hop_problem.cs" />
     <Compile Include="Problems\tower_of_hanoi.cs" />
@@ -142,6 +144,9 @@
     <Compile Include="_Modrate\Matrix\pond_size.cs" />
     <Compile Include="_Modrate\Matrix\tic_tac_win.cs" />
     <Compile Include="_Modrate\permutation_combination\cell_phone_numeric_keypad.cs" />
+    <Compile Include="_Modrate\Problems\histogram_largest_rectangle.cs" />
+    <Compile Include="_Modrate\Problems\LRU_Cache.cs" />
+    <Compile Include="_Modrate\Problems\math_equation_compute.cs" />
     <Compile Include="_Modrate\randm_number\rand5_to_rand7.cs" />
     <Compile Include="_Modrate\String\pattern_matching.cs" />
     <Compile Include="_Modrate\String\slot_game.cs" />
