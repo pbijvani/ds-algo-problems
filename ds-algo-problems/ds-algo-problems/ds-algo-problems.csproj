@@ -100,6 +100,7 @@
     <Compile Include="Problems\tower_hop_problem.cs" />
     <Compile Include="Problems\tower_of_hanoi.cs" />
     <Compile Include="Problems\Tow_Dimension_Get_two_closest_points.cs" />
+    <Compile Include="Problems\universal_tree_problem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sort\Kth_Largest_element.cs" />
@@ -129,6 +130,8 @@
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
     <Compile Include="Tree\zig_zag_traversal.cs" />
+    <Compile Include="youtube\cycle_in_a_array.cs" />
+    <Compile Include="youtube\longest_consecutive_sequence_in_array.cs" />
     <Compile Include="_Modrate\Array\contigious_subarray.cs" />
     <Compile Include="_Modrate\Array\pairs_with_given_sum.cs" />
     <Compile Include="_Modrate\Array\sub_sort.cs" />
