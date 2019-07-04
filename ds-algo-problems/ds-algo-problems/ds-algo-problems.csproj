@@ -52,6 +52,7 @@
     <Compile Include="Array\max_gap_of_i_j.cs" />
     <Compile Include="Array\max_un_sorted_subarray.cs" />
     <Compile Include="Array\merge_overlaping_intervals.cs" />
+    <Compile Include="Array\product_of_all_number_except_i.cs" />
     <Compile Include="Array\Subset_Array.cs" />
     <Compile Include="Contiguous.Array.Problems\Contiguous_Binary_Array_With_equal_0_1.cs" />
     <Compile Include="Array\Convert_number_to_array.cs" />
@@ -130,9 +131,14 @@
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
     <Compile Include="Tree\zig_zag_traversal.cs" />
+    <Compile Include="youtube\binary_tree_level_order_traversal.cs" />
     <Compile Include="youtube\cycle_in_a_array.cs" />
     <Compile Include="youtube\intersection_between_3_array.cs" />
     <Compile Include="youtube\longest_consecutive_sequence_in_array.cs" />
+    <Compile Include="youtube\move_all_zero_in_array_to_end.cs" />
+    <Compile Include="youtube\queue_using_stack.cs" />
+    <Compile Include="youtube\reverse_an_array.cs" />
+    <Compile Include="youtube\ways_to_decode_message.cs" />
     <Compile Include="_Modrate\Array\contigious_subarray.cs" />
     <Compile Include="_Modrate\Array\pairs_with_given_sum.cs" />
     <Compile Include="_Modrate\Array\sub_sort.cs" />
