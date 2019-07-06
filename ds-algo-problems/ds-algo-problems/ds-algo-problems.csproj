@@ -47,6 +47,7 @@
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="Array\Find_k_closest_elements_of_given_number_in_array.cs" />
+    <Compile Include="Array\find_k_smallest_element_from_array.cs" />
     <Compile Include="Array\get_largest_number_from_array_of_number.cs" />
     <Compile Include="Array\insert_interval.cs" />
     <Compile Include="Array\max_gap_of_i_j.cs" />
@@ -62,6 +63,8 @@
     <Compile Include="Array\Remove_Duplicate_From_Array_Max_2_Allowed.cs" />
     <Compile Include="Array\Sorted_Array_Find_Two_Number_That_add_upto_given_number.cs" />
     <Compile Include="Contiguous.Array.Problems\Min_length_of_Contiguous_subarray_with_Sum_greated_than_gives_number_s.cs" />
+    <Compile Include="DataStructure\MaxHeap.cs" />
+    <Compile Include="DataStructure\MinHeap.cs" />
     <Compile Include="Domain\Graph.cs" />
     <Compile Include="Domain\Node.cs" />
     <Compile Include="Domain\TreeNode.cs" />
@@ -130,14 +133,19 @@
     <Compile Include="Tree\Is_Same_Tree.cs" />
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
+    <Compile Include="Tree\tree_lowest_common_ancestor.cs" />
     <Compile Include="Tree\zig_zag_traversal.cs" />
+    <Compile Include="youtube\array_subset_that_add_up_to_given_number.cs" />
+    <Compile Include="youtube\binary_tree_all_node_from_given_node_at_k_distance.cs" />
     <Compile Include="youtube\binary_tree_level_order_traversal.cs" />
+    <Compile Include="youtube\count_negative_number_in_row_col_wise_sorted_matrix.cs" />
     <Compile Include="youtube\cycle_in_a_array.cs" />
     <Compile Include="youtube\intersection_between_3_array.cs" />
     <Compile Include="youtube\longest_consecutive_sequence_in_array.cs" />
     <Compile Include="youtube\move_all_zero_in_array_to_end.cs" />
     <Compile Include="youtube\queue_using_stack.cs" />
     <Compile Include="youtube\reverse_an_array.cs" />
+    <Compile Include="youtube\staircase_problem.cs" />
     <Compile Include="youtube\ways_to_decode_message.cs" />
     <Compile Include="_Modrate\Array\contigious_subarray.cs" />
     <Compile Include="_Modrate\Array\pairs_with_given_sum.cs" />
