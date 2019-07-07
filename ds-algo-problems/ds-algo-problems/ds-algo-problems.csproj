@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Array\Amazon_que_array_find_2_element_Total_close_to_given_number.cs" />
+    <Compile Include="Array\array_find_missing_lowest_positive_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="Array\Find_k_closest_elements_of_given_number_in_array.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Domain\TreeNode.cs" />
     <Compile Include="DynamicPrograming\Coin_Denominations.cs" />
     <Compile Include="Extension.cs" />
+    <Compile Include="Graph.Problems\cheapest_flight_with_k_stop.cs" />
     <Compile Include="Graph.Problems\Course_Schedules.cs" />
     <Compile Include="Graph.Problems\graph_dfs_bfs_other_methods.cs" />
     <Compile Include="Int\decimal_to_binary.cs" />
@@ -90,12 +92,14 @@
     <Compile Include="Matrix\2D_Array_traversal_Amazon_que.cs" />
     <Compile Include="Matrix\create_spiral_matrix.cs" />
     <Compile Include="Matrix\matrix_largest_possible_square_of_1.cs" />
+    <Compile Include="Matrix\matrix_min_cost_path.cs" />
     <Compile Include="Matrix\Number_of_Islands.cs" />
     <Compile Include="Matrix\rotate_matrix.cs" />
     <Compile Include="Matrix\Set_0_to_row_and_col_if_element_is_0.cs" />
     <Compile Include="Matrix\shortest_bridge.cs" />
     <Compile Include="Problems\Best_Time_To_Buy_And_Sell_Stock.cs" />
     <Compile Include="Problems\climb_stairs.cs" />
+    <Compile Include="Problems\courses_prerequisite.cs" />
     <Compile Include="Problems\Excel_sheet_Column_title.cs" />
     <Compile Include="Problems\Movies_In_Flight.cs" />
     <Compile Include="DynamicPrograming\Parentheses_Prob.cs" />
@@ -142,6 +146,7 @@
     <Compile Include="youtube\cycle_in_a_array.cs" />
     <Compile Include="youtube\intersection_between_3_array.cs" />
     <Compile Include="youtube\longest_consecutive_sequence_in_array.cs" />
+    <Compile Include="youtube\matrix_top_left_to_bottom_right.cs" />
     <Compile Include="youtube\move_all_zero_in_array_to_end.cs" />
     <Compile Include="youtube\queue_using_stack.cs" />
     <Compile Include="youtube\reverse_an_array.cs" />

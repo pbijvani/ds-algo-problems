@@ -12,7 +12,13 @@ namespace ds_algo_problems.Domain
         {
             this.Data = data;
         }
+        public Graph(int data, int weight)
+        {
+            this.Data = data;
+            this.Weight = weight;
+        }
         public int Data { get; set; }
+        public int Weight { get; set; }
         public List<Graph> Descendant { get; set; }
     }
 }
