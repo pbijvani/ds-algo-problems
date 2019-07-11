@@ -11,21 +11,28 @@ namespace ds_algo_problems.Problems
         /// <summary>
         /// Best Time to Buy and Sell Stock II
         /// Say you have an array for which the ith element is the price of a given stock on day i.
-        /// Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times
+        /// Design an algorithm to find the maximum profit. 
+        /// You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times
         /// </summary>
         /// <param name="prices"></param>
         /// <returns></returns>
         public int MaxStockProfit(int[] prices)
         {
-            int maxProfit = 0;
-            for (int i = 0; i < prices.Length - 1; i++)
+            int minPrice = int.MaxValue;
+            int maxProf = 0;
+
+            foreach(var price in prices)
             {
-                if (prices[i] < prices[i + 1])
+                if(price < minPrice)
                 {
-                    maxProfit += prices[i + 1] - prices[i];
+                    minPrice = price;
+                }
+                else if(price - minPrice > maxProf)
+                {
+                    maxProf = price - minPrice;
                 }
             }
-            return maxProfit;
+            return maxProf;
         }
         /// <summary>
         /// Same as above. But we can make only two transactions
@@ -55,5 +62,7 @@ namespace ds_algo_problems.Problems
             }
             return stockAppretiation.OrderByDescending(x => x).Take(2).Sum();
         }
+        // Note : above sol has problem. Refer below to get right sol
+        //https://miafish.wordpress.com//?s=stock&search=Go
     }
 }
