@@ -136,6 +136,7 @@
     <Compile Include="Tree\Is_Binary_Tree_Mirror_Copy.cs" />
     <Compile Include="Tree\Is_Binary_Tree_Symetric.cs" />
     <Compile Include="Tree\Is_Same_Tree.cs" />
+    <Compile Include="Tree\serialize_binary_tree.cs" />
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
     <Compile Include="Tree\Max_Depth_Of_Binary_Tree.cs" />
     <Compile Include="Tree\tree_lowest_common_ancestor.cs" />
