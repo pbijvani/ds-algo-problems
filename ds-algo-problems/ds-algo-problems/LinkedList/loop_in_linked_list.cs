@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.LinkedList
 {
+    //https://java2blog.com/find-start-node-of-loop-in-linkedlist/
     class loop_in_linked_list
     {
         public bool HasCycle(Node head)

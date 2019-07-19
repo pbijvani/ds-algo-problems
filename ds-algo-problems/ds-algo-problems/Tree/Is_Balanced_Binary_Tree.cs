@@ -11,7 +11,8 @@ namespace ds_algo_problems.Tree
     {
         /// <summary>
         /// Balanced Binary Tree
-        /// a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+        /// a binary tree in which the depth of the two subtrees of every node 
+        /// never differ by more than 1.
         /// </summary>
         /// <param name="root"></param>
         /// <returns></returns>

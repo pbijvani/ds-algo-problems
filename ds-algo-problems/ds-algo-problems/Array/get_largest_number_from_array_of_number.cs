@@ -8,6 +8,14 @@ namespace ds_algo_problems.Array
 {
     class get_largest_number_from_array_of_number
     {
+        /*
+         * 
+         * Array :{1, 3, 9}
+         * largest number = 931
+         * 
+         * Array: {19, 7, 8}
+         * 8719
+         */
         public string GetLargestNumber(List<int> input)
         {
             var inputStr = input.Select(x => x.ToString()).ToList();

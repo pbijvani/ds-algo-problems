@@ -82,9 +82,9 @@ namespace ds_algo_problems.Graph1.Problems
                 System.Array.Copy(dp, 0, temp, 0, n + 1);
                 foreach(var flight in flights)
                 {
-                    int u = flight.From, v = flight.To, cost = flight.Weight;
+                    int from = flight.From, to = flight.To, cost = flight.Weight;
                     
-                    temp[v] = System.Math.Min(temp[v], dp[u] == int.MaxValue ? int.MaxValue : dp[u] + cost);
+                    temp[to] = System.Math.Min(temp[to], dp[from] == int.MaxValue ? int.MaxValue : dp[from] + cost);
                 }
                 dp = temp;
             }

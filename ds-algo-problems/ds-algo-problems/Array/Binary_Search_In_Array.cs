@@ -8,37 +8,37 @@ namespace ds_algo_problems.Array
 {
     class BinarySearchInArray
     {
-        public int BinarySearchRecursive(int[] inputArray, int key, int min, int max)
+        public int BinarySearchRecursive(int[] inputArray, int key, int startIndex, int endIndex)
         {
-            if (min > max)
+            if (startIndex > endIndex)
             {
                 return -1;
             }
             else
             {
-                int mid = (min + max) / 2;
+                int mid = (startIndex + endIndex) / 2;
                 if (key == inputArray[mid])
                 {
                     return mid;
                 }
                 else if (key < inputArray[mid])
                 {
-                    return BinarySearchRecursive(inputArray, key, min, mid - 1);
+                    return BinarySearchRecursive(inputArray, key, startIndex, mid - 1);
                 }
                 else
                 {
-                    return BinarySearchRecursive(inputArray, key, mid + 1, max);
+                    return BinarySearchRecursive(inputArray, key, mid + 1, endIndex);
                 }
             }
         }
         public int BinarySearchIterative(int[] input, int key)
         {
-            int min = 0;
-            int max = input.Length - 1;
+            int startIndex = 0;
+            int endIndex = input.Length - 1;
 
-            while (min <= max)
+            while (startIndex <= endIndex)
             {
-                int mid = (min + max) / 2;
+                int mid = (startIndex + endIndex) / 2;
 
                 if (key == input[mid])
                 {
@@ -46,11 +46,11 @@ namespace ds_algo_problems.Array
                 }
                 else if (key < input[mid])
                 {
-                    max = mid - 1;
+                    endIndex = mid - 1;
                 }
                 else
                 {
-                    min = mid + 1;
+                    startIndex = mid + 1;
                 }
             }
             return -1;

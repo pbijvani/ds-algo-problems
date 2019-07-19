@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Int
 {
-    class Reverse_Number
+    public class Reverse_Number
     {
-        static long reversDigits(long num)
+        public long reversDigits(long num)
         {
             long rev_num = 0;
             while (num > 0)

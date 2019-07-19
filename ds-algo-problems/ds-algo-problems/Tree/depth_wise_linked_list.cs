@@ -9,7 +9,9 @@ namespace ds_algo_problems.Tree
 {
     class depth_wise_linked_list
     {
-        public void BinaryTreeToDepthWiseLinkedList(TreeNode root, int depth, Dictionary<int, Tuple<Node, Node>> list)
+        public void BinaryTreeToDepthWiseLinkedList(TreeNode root, 
+            int depth, 
+            Dictionary<int, Tuple<Node, Node>> list)
         {
             if (root == null) return;
 

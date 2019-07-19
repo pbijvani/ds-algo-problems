@@ -20,7 +20,7 @@ namespace ds_algo_problems.Matrix
             int x = 0;
             int y = 0;
 
-            int[] dir = new int[] { 1, 2, 4, 4 };
+            int[] dir = new int[] { 1, 2, 3, 4 };
             int currDir = 1;
 
             while (i <= noOfElement)

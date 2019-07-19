@@ -64,5 +64,45 @@ namespace ds_algo_problems.Problems
         }
         // Note : above sol has problem. Refer below to get right sol
         //https://miafish.wordpress.com//?s=stock&search=Go
+
+        public int MaxProfit2(int[] prices)
+        {
+            var maxProfitFor2Transactions = 0;
+            var leftMaxProfit = maxProfitFromBegin(prices);
+            var rightMaxProfit = maxProfitFromEnd(prices);
+
+            for (int i = 0; i < prices.Length; i++)
+            {
+                var left = leftMaxProfit[i];
+                var right = rightMaxProfit[i];
+                maxProfitFor2Transactions = System.Math.Max(maxProfitFor2Transactions, left + right);
+            }
+
+            return maxProfitFor2Transactions;
+        }
+
+        public int[] maxProfitFromBegin(int[] prices)
+        {
+            var maxProfit = new int[prices.Length + 1];
+            var minPrice = int.MaxValue;
+            for (int i = 0; i < prices.Length; i++)
+            {
+                minPrice = System.Math.Min(minPrice, prices[i]);
+                maxProfit[i + 1] = System.Math.Max(maxProfit[i], prices[i] - minPrice);
+            }
+            return maxProfit;
+        }
+        public int[] maxProfitFromEnd(int[] prices)
+        {
+            var maxProfit = new int[prices.Length + 1];
+            var maxPrice = int.MinValue;
+            for (int i = prices.Length - 1; i >= 0; i--)
+            {
+                maxPrice = System.Math.Max(maxPrice, prices[i]);
+                maxProfit[i] = System.Math.Max(maxProfit[i + 1], maxPrice - prices[i]);
+            }
+
+            return maxProfit;
+        }
     }
 }

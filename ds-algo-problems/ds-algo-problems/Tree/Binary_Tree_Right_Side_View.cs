@@ -11,7 +11,9 @@ namespace ds_algo_problems.Tree
     {
         /// <summary>
         /// Binary Tree Right Side View
-        /// Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom
+        /// Given a binary tree, 
+        /// imagine yourself standing on the right side of it, 
+        /// return the values of the nodes you can see ordered from top to bottom
         /// </summary>
         private Dictionary<int, int> dict = new Dictionary<int, int>();
         public void BinaryTreeRightSideView(TreeNode root, bool isRightSide, int depth)

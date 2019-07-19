@@ -13,6 +13,7 @@ namespace ds_algo_problems.Array
         /// Input: [0,1,0]
         ///Output: 2
         ///Explanation: [0, 1] (or[1, 0]) is a longest contiguous subarray with equal number of 0 and 1
+        ///https://leetcode.com/problems/contiguous-array/solution/
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>

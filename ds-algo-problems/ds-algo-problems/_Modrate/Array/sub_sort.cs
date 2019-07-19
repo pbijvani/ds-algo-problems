@@ -119,7 +119,7 @@ namespace ds_algo_problems._Modrate.Array
         {
             int min = int.MaxValue;
             int m = 0;
-            for(int i = input.Length; i >=0; i--)
+            for(int i = input.Length - 1; i >=0; i--)
             {
                 if (input[i] > min)
                     m = i;

@@ -14,7 +14,7 @@ namespace ds_algo_problems.youtube
         public int decode(string num)
         {
             var len = num.Length;
-            int?[] memo = new int?[len];
+            int?[] memo = new int?[len+1];
             var retVal = NoOfWays(num, len, memo);
 
             return retVal;
