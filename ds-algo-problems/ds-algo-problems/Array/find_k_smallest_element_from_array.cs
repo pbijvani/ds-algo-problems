@@ -51,5 +51,63 @@ namespace ds_algo_problems.Array
                 Console.WriteLine(heap.Poll());
             }
         }
+        // Using Quick Sort Selection menthod
+        public int KthElement(int[] arr, int k)
+        {
+            return kthSmallest(arr, 0, arr.Length - 1, arr.Length - k + 1);
+        }        
+
+        public int kthSmallest(int[] arr, int startIndex,
+                                  int endIndex, int k)
+        {
+            //if (l >= r)
+            //    return index;
+
+            int pivot = arr[endIndex];
+
+            int left = startIndex;
+            int right = endIndex;
+
+            int index = PartitionKth(arr, left, right, pivot);
+
+            arr.Swap<int>(index, endIndex);            
+
+
+            if (k == index + 1)
+                return pivot;
+            else if(k < index + 1)
+            {
+                return kthSmallest(arr, startIndex, index - 1, k);
+            }
+            else 
+            {
+                return kthSmallest(arr, index + 1, endIndex, k);
+            }
+        }
+
+        public int PartitionKth(int[] array, int left, int right, int pivot)
+        {
+            while (left < right)
+            {
+                while (array[left] < pivot && left < right)
+                {
+                    left++;
+                }
+
+                while (array[right] >= pivot && left < right)
+                {
+                    right--;
+                }
+
+                if (left < right)
+                {
+                    array.Swap<int>(left, right);
+                    left++;
+                    right--;
+                }
+            }
+            return left;
+        }        
+
     }
 }
