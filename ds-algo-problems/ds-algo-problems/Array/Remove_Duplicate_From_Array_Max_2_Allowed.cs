@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Array
 {
-    class Remove_Duplicate_From_Array_Max_2_Allowed
+    public class Remove_Duplicate_From_Array_Max_2_Allowed
     {
         public int RemoveDuplicateElement(int[] nums, int val)
         {

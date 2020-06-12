@@ -70,6 +70,7 @@
     <Compile Include="Domain\Node.cs" />
     <Compile Include="Domain\TreeNode.cs" />
     <Compile Include="DynamicPrograming\Coin_Denominations.cs" />
+    <Compile Include="DynamicPrograming\MagicIndex.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="Graph.Problems\cheapest_flight_with_k_stop.cs" />
     <Compile Include="Graph.Problems\Course_Schedules.cs" />

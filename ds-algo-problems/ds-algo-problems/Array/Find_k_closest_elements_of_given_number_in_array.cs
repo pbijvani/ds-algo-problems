@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Array
 {
-    class Find_k_closest_elements_of_given_number_in_array
+    public class Find_k_closest_elements_of_given_number_in_array
     {
         public int[] FindClosestELement(int[] input, int k, int x)
         {

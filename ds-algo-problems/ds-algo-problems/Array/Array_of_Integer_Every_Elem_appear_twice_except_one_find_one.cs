@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Array
 {
-    class Array_of_Integer_Every_Elem_appear_twice_except_one_find_one
+    public class Array_of_Integer_Every_Elem_appear_twice_except_one_find_one
     {
         /// <summary>
         /// Single Number
@@ -30,6 +30,18 @@ namespace ds_algo_problems.Array
                 return ret;
             });
 
+        }
+
+        public int FindSingleNumber(int[] arr)
+        {
+            var res = arr[0] ^ arr[1];
+
+            for (int i = 2; i < arr.Length; i++)
+            {
+                res = res ^ arr[i];
+            }
+
+            return res;
         }
     }
 }
