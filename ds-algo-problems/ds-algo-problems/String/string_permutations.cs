@@ -78,5 +78,88 @@ namespace ds_algo_problems.String
                 }
             }
         }
+        /*
+         * June 2020
+         */
+        public List<string> GetPermutations(string input)
+        {
+            if (input == null) return null;
+
+            if (input.Length == 0) return new List<string>() { "" };
+
+            var permutations = new List<string>();
+
+            var firstChar = input[0];
+            var remainder = input.Substring(1);
+
+            var words = GetPermutations(remainder);
+
+            foreach(var word in words)
+            {
+                for(int i = 0; i <= word.Length; i++)
+                {
+                    permutations.Add(InsertAti(word, firstChar, i));
+                }
+            }
+
+            return permutations;
+        }
+
+        private string InsertAti(string word, char ch, int i)
+        {
+            var first = word.Substring(0, i);
+            var last = word.Substring(i);
+            return first + ch + last;
+        }
+
+        public List<string> GetPermutationsDup(string input)
+        {
+            var dict = PrepareDict(input);
+
+            var result = new List<string>();
+
+            GetPermutationsDup(dict, "", input.Length, result);
+
+            return result;
+        }
+
+        private Dictionary<char, int> PrepareDict(string input)
+        {
+            var dict = new Dictionary<char, int>();
+            foreach (var ch in input)
+            {
+                if (dict.ContainsKey(ch))
+                {
+                    dict[ch] = dict[ch] + 1;
+                }
+                else
+                {
+                    dict.Add(ch, 1);
+                }
+            }
+            return dict;
+        }
+
+        public void GetPermutationsDup(Dictionary<char, int> map, string prefix, int remainder, List<string> result)
+        {
+            if (remainder == 0)
+            {
+                result.Add(prefix);
+                return;
+            }
+            var keys = map.Keys.ToList();
+
+            foreach (var ch in keys)
+            {
+                var count = map[ch];
+
+                if (count > 0)
+                {
+                    map[ch] = count - 1;
+                    GetPermutationsDup(map, prefix + ch, remainder - 1, result);
+                    map[ch] = count;
+                }
+            }
+        }
     }
 }

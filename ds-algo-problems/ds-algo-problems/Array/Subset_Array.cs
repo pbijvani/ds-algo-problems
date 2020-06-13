@@ -70,5 +70,31 @@ namespace ds_algo_problems.Array
             }
 
         }
+
+        // Another way to look at problem : 6/11/2020
+        // P(a1, a2) = {}, {a1}, {a2}, {a1, a2}
+        // P(a1, a2, a3) = Add a3 into P (a1, a2)
+
+        public void ArraySubSet3(string input)
+        {
+            List<string> subset = new List<string>();
+
+            subset.Add(""); // Base case for P(0)
+
+            foreach(var ch in input)
+            {
+                List<string> newSubSetItems = new List<string>();
+                foreach(var set in subset)
+                {
+                    newSubSetItems.Add(set + ch);
+                }
+                subset.AddRange(newSubSetItems);
+            }
+
+            foreach (var set in subset)
+            {
+                Console.WriteLine(set);
+            }
+        }
     }
 }
