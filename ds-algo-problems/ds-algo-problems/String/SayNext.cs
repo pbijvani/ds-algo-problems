@@ -35,6 +35,9 @@ namespace ds_algo_problems.String
 
         public string CountAndSay(int n)
         {
+            /*
+             * The count-and-say sequence is the sequence of integers with the first five terms as following:
+             */
             //1.     1
             //2.     11
             //3.     21
