@@ -31,5 +31,19 @@ namespace ds_algo_problems.String
 
             return false;
         }
+
+        public bool IsRotationString1(string s1, string s2)
+        {
+            if (s1.Length != s2.Length) return false;
+
+            else
+            {
+                var s1s1 = string.Concat(s1, s1);
+
+                return s1s1.Contains(s2);
+            }
+        }
+
+        
     }
 }
