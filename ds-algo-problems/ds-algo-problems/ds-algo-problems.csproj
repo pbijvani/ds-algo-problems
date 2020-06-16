@@ -84,6 +84,7 @@
     <Compile Include="LinkedList\loop_in_linked_list.cs" />
     <Compile Include="LinkedList\palindrom_linked_list.cs" />
     <Compile Include="LinkedList\Partition_linked_list_at_pivot_element.cs" />
+    <Compile Include="LinkedList\remove_duplicate_node.cs" />
     <Compile Include="LinkedList\Reverse_Linked_list.cs" />
     <Compile Include="LinkedList\Sorted_List_To_Binary_Search_Tree.cs" />
     <Compile Include="LinkedList\Tow_linked_list_Addition.cs" />
