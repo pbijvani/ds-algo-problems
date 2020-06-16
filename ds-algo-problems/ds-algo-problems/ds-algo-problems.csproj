@@ -81,6 +81,7 @@
     <Compile Include="Int\Reverse_Number.cs" />
     <Compile Include="LinkedList\Addition_of_two_number_in_linked_list.cs" />
     <Compile Include="LinkedList\inter_section_of_two_list.cs" />
+    <Compile Include="LinkedList\k_th_node_from_last_singly_list.cs" />
     <Compile Include="LinkedList\loop_in_linked_list.cs" />
     <Compile Include="LinkedList\palindrom_linked_list.cs" />
     <Compile Include="LinkedList\Partition_linked_list_at_pivot_element.cs" />
