@@ -82,9 +82,32 @@ namespace ds_algo_problems.LinkedList
             node.next.next = new Node(30);
             node.next.next.next = new Node(40);
             node.next.next.next.next = new Node(50);
+            node.next.next.next.next.next = new Node(60);
             //node.next.next.next.next.next = node;
 
             return HasCycle(node);
+        }
+
+        /*
+         * Version with hash set.
+         * 6/21/2020
+         */
+        public LinkedListNode FindStartOfLoopHashTable(LinkedListNode head)
+        {
+            HashSet<LinkedListNode> hashSet = new HashSet<LinkedListNode>();
+
+            while (head != null)
+            {
+                if (hashSet.Contains(head)) return head;
+                else
+                {
+                    hashSet.Add(head);
+                }
+
+                head = head.Next;
+            }
+
+            return null;
         }
     }
 }
