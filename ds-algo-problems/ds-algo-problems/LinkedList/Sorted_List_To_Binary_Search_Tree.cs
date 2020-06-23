@@ -9,6 +9,10 @@ namespace ds_algo_problems.LinkedList
 {
     public class SortedListToBinarySearchTree
     {
+        /*
+         * RUntime : Time - N log N
+         * Space : Log N
+         */
         public TreeNode sortedListToBST(Node head)
         {
 
@@ -59,5 +63,107 @@ namespace ds_algo_problems.LinkedList
 
             return slowPtr;
         }
+
+
+        /*
+         * Method 2 : Convert linked list to ArrayList (List)
+         * ANd then apply BST
+         * Time: O (N)
+         * SPace : O (N)
+         */
+
+        public TreeNode SortedListToBST1(Node node)
+        {
+            var list = GetArrayList(node);
+
+            var len = list.Count;
+
+            return SortedListToBST1Rec(list, 0, len - 1);
+        }
+
+        public TreeNode SortedListToBST1Rec(List<int> list, int start, int end)
+        {
+            var mid = (start + end) / 2;
+
+            var treeNode = new TreeNode(list[mid]);
+
+            if(mid == start)
+            {
+                return treeNode;
+            }
+
+            treeNode.left = SortedListToBST1Rec(list, start, mid - 1);
+            treeNode.right = SortedListToBST1Rec(list, mid + 1, end);
+
+            return treeNode;
+        }
+
+        private List<int> GetArrayList(Node node)
+        {
+            var ret = new List<int>();
+            while(node != null)
+            {
+                ret.Add(node.data);
+                node = node.next;
+            }
+            return ret;
+        }
     }
+
+    /*
+     * BST when you do in order traversal, it will giv you element in sorted order.
+     * using this propety of BST will just traverse to sorted list from left to right and construct tree
+     * Time : O (N)
+     Space : O (log N)
+     */ 
+    public class ListToBSTInOrder
+    {
+        public Node _head;
+        public ListToBSTInOrder(Node head)
+        {
+            _head = head;
+        }
+
+        private int GetLength()
+        {
+            var len = 0;
+            var curr = _head;
+            while(curr != null)
+            {
+                len++;
+            }
+            return len;
+        }
+
+        private TreeNode ConvertToTreeRec(int left, int right)
+        {
+            if (left > right) return null;
+
+            var mid = (left + right) / 2;
+
+            // First step of simulated inorder traversal. Recursively form
+            // the left half
+            TreeNode leftNode = ConvertToTreeRec(left, mid - 1);
+
+            // Once left half is traversed, process the current node
+            TreeNode root = new TreeNode(_head.data);
+            root.left = leftNode;
+
+            // Maintain the invariance mentioned in the algorithm
+            _head = _head.next;
+
+            TreeNode rightNode = ConvertToTreeRec(mid + 1, right);
+            root.right = rightNode;
+
+            return root;
+        }
+
+        public TreeNode ConvertToBST()
+        {
+            var len = GetLength();
+
+            return ConvertToTreeRec(0, len - 1);
+        }
+    }
+
 }
