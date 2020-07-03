@@ -78,20 +78,7 @@ namespace ds_algo_problems.Problems
 
         public void Test()
         {
-            //var preReq = new int[,] {
-            //    {1,0},
-            //    {2,0},
-            //    {2,1},
-            //    {3,1},
-            //    {4,1},
-            //    {4,2},
-            //    {5,1},
-            //    {6,5},
-            //    {6,4}
-            //};
-            //int noOfCourse = 7;
-
-            var preReqWithCircularDep = new int[,] {
+            var preReq = new int[,] {
                 {1,0},
                 {2,0},
                 {2,1},
@@ -100,14 +87,29 @@ namespace ds_algo_problems.Problems
                 {4,2},
                 {5,1},
                 {6,5},
-                {6,4},
-                //{7,3},
-                //{1,7},
-                {1,4}
+                {6,4}
             };
             int noOfCourse = 7;
 
-            var res = CourseSchedule(noOfCourse, preReqWithCircularDep);
+            var res = CourseSchedule(noOfCourse, preReq);
+
+            //var preReqWithCircularDep = new int[,] {
+            //    {1,0},
+            //    {2,0},
+            //    {2,1},
+            //    {3,1},
+            //    {4,1},
+            //    {4,2},
+            //    {5,1},
+            //    {6,5},
+            //    {6,4},
+            //    //{7,3},
+            //    //{1,7},
+            //    {1,4}
+            //};
+            //int noOfCourse = 7;
+
+            //var res = CourseSchedule(noOfCourse, preReqWithCircularDep);
         }
     }
 }
