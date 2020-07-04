@@ -140,6 +140,7 @@
     <Compile Include="Tree\Is_Binary_Tree_Mirror_Copy.cs" />
     <Compile Include="Tree\Is_Binary_Tree_Symetric.cs" />
     <Compile Include="Tree\Is_Same_Tree.cs" />
+    <Compile Include="Tree\is_subtree.cs" />
     <Compile Include="Tree\serialize_binary_tree.cs" />
     <Compile Include="Tree\tree_common_ancestor.cs" />
     <Compile Include="Tree\Tree_Level_Order_Traversal.cs" />
