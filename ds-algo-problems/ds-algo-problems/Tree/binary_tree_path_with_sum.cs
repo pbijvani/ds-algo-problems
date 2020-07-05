@@ -37,7 +37,7 @@ namespace ds_algo_problems.Tree
         {
             if (start == null) return 0;
 
-            sumSoFar = sum + start.data;
+            sumSoFar = sumSoFar + start.data;
 
             int totalCount = 0;
 

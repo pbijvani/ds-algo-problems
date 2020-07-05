@@ -47,6 +47,7 @@
     <Compile Include="Array\array_find_missing_lowest_positive_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
+    <Compile Include="Array\find_contiguous_path_target_sum.cs" />
     <Compile Include="Array\Find_k_closest_elements_of_given_number_in_array.cs" />
     <Compile Include="Array\find_k_smallest_element_from_array.cs" />
     <Compile Include="Array\get_largest_number_from_array_of_number.cs" />
