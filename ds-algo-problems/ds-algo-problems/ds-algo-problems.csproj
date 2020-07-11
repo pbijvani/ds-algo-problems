@@ -57,6 +57,7 @@
     <Compile Include="Array\merge_overlaping_intervals.cs" />
     <Compile Include="Array\product_of_all_number_except_i.cs" />
     <Compile Include="Array\Subset_Array.cs" />
+    <Compile Include="Bit\flip_bit_find_longest_squence_of_one.cs" />
     <Compile Include="Contiguous.Array.Problems\Contiguous_Binary_Array_With_equal_0_1.cs" />
     <Compile Include="Array\Convert_number_to_array.cs" />
     <Compile Include="Contiguous.Array.Problems\Max_Contiguous_Sub_Array.cs" />

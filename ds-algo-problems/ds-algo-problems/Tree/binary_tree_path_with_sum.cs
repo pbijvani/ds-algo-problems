@@ -20,6 +20,8 @@ namespace ds_algo_problems.Tree
         // Note: if you want to print all path then take each route from root to leaf 
         //and search contineous sub array within that
 
+            // Time O(N Log N)
+
         public int CountBinaryTreePathWithSum(TreeNode root, int sum)
         {
             if (root == null) return 0;
@@ -55,7 +57,7 @@ namespace ds_algo_problems.Tree
 
 
         /////////////// Better solution
-        ///
+        /// O (N)
 
         private int CountPathsWithSum(TreeNode root, int targetSum, int runningSum, Dictionary<int, int> dict)
         {
