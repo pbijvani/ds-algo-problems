@@ -54,5 +54,47 @@ namespace ds_algo_problems.Array
 
             return output;
         }
+
+        // This is the variation of problmen where arr1 has enough empty space at the end to accomodate arr2.
+        // no need to take an extra array
+        // Instead of version below where we are first moving arr1 element to end of array, we can just push larger element to end.
+        public int[] MergeSortedArray(int[] arr1, int[] arr2, int arr1Len)
+        {
+            var len1 = arr1Len;
+            var len2 = arr2.Length;
+
+            // Shift arr1 to right
+            for (int i = len1 + len2 - 1; i >= len2; i--)
+            {
+                arr1[i] = arr1[i - len2];
+            }
+
+            var index1 = len2;
+            var index2 = 0;
+            var curr = 0;
+            while (index1 < len1 + len2 && index2 < len2)
+            {
+                if (arr1[index1] < arr2[index2])
+                {
+                    arr1[curr] = arr1[index1];
+                    index1++;
+                }
+                else
+                {
+                    arr1[curr] = arr2[index2];
+                    index2++;
+                }
+                curr++;
+            }
+
+            while (index2 < len2)
+            {
+                arr1[curr] = arr2[index2];
+                index2++;
+                curr++;
+            }
+
+            return arr1;
+        }
     }
 }
