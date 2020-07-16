@@ -121,6 +121,7 @@
     <Compile Include="Sort\Kth_Largest_element.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SearchInRotatedArray.cs" />
+    <Compile Include="Sort\SortedSearchNoSize.cs" />
     <Compile Include="Stack\3_stack_in_one_array.cs" />
     <Compile Include="Stack\sort_stack.cs" />
     <Compile Include="Stack\stack_with_min_support.cs" />
