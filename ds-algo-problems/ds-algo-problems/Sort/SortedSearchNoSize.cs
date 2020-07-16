@@ -15,6 +15,9 @@ namespace ds_algo_problems.Sort
          * Listy has positive sorted elements only.
          * 
          * Given x, find the index at which x is placed.
+         * 
+         * Runtime : O(log N) to find lenghth and then O(log N) for BS
+         * so overall runtime is O(log N)
          */
         public int Search(Listy list, int value)
         {
