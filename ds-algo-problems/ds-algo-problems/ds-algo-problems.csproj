@@ -118,6 +118,7 @@
     <Compile Include="Problems\word_ladder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\almost_sorted_array.cs" />
     <Compile Include="Sort\Kth_Largest_element.cs" />
     <Compile Include="Sort\QuickSort.cs" />
     <Compile Include="Sort\SearchInRotatedArray.cs" />
