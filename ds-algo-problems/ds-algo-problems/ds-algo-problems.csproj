@@ -67,6 +67,7 @@
     <Compile Include="Array\Remove_Duplicate_From_Array_Max_2_Allowed.cs" />
     <Compile Include="Array\Sorted_Array_Find_Two_Number_That_add_upto_given_number.cs" />
     <Compile Include="Contiguous.Array.Problems\Min_length_of_Contiguous_subarray_with_Sum_greated_than_gives_number_s.cs" />
+    <Compile Include="DataStructure\Hasher.cs" />
     <Compile Include="DataStructure\MaxHeap.cs" />
     <Compile Include="DataStructure\MinHeap.cs" />
     <Compile Include="Domain\Graph.cs" />
