@@ -100,6 +100,7 @@
     <Compile Include="Matrix\create_spiral_matrix.cs" />
     <Compile Include="Matrix\matrix_largest_possible_square_of_1.cs" />
     <Compile Include="Matrix\matrix_min_cost_path.cs" />
+    <Compile Include="Matrix\matrix_of_letter_find_if_word_exists.cs" />
     <Compile Include="Matrix\Number_of_Islands.cs" />
     <Compile Include="Matrix\rotate_matrix.cs" />
     <Compile Include="Matrix\Set_0_to_row_and_col_if_element_is_0.cs" />
