@@ -131,6 +131,7 @@
     <Compile Include="Stack\3_stack_in_one_array.cs" />
     <Compile Include="Stack\sort_stack.cs" />
     <Compile Include="Stack\stack_with_min_support.cs" />
+    <Compile Include="String\first_unique_char.cs" />
     <Compile Include="String\has_unique_character.cs" />
     <Compile Include="String\is_permutation.cs" />
     <Compile Include="String\is_permutation_of_palindrom.cs" />
