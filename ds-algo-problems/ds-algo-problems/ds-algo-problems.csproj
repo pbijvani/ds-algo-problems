@@ -82,6 +82,7 @@
     <Compile Include="Int\decimal_to_binary.cs" />
     <Compile Include="Int\gcd_lcm.cs" />
     <Compile Include="Int\multiply_without_operator.cs" />
+    <Compile Include="Int\pow_of_two.cs" />
     <Compile Include="Int\Reverse_Number.cs" />
     <Compile Include="LinkedList\Addition_of_two_number_in_linked_list.cs" />
     <Compile Include="LinkedList\inter_section_of_two_list.cs" />
