@@ -107,6 +107,7 @@
     <Compile Include="Matrix\Set_0_to_row_and_col_if_element_is_0.cs" />
     <Compile Include="Matrix\shortest_bridge.cs" />
     <Compile Include="Problems\Best_Time_To_Buy_And_Sell_Stock.cs" />
+    <Compile Include="Problems\best_time_to_buy_sell_stock_with_cooldown.cs" />
     <Compile Include="Problems\climb_stairs.cs" />
     <Compile Include="Problems\courses_prerequisite.cs" />
     <Compile Include="Problems\Excel_sheet_Column_title.cs" />
