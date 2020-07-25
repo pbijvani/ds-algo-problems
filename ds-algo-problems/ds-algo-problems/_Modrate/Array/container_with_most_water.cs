@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ds_algo_problems.Array
+namespace ds_algo_problems._Modrate.Array
 {
     public class container_with_most_water
     {
