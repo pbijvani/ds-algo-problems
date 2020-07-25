@@ -112,6 +112,7 @@
     <Compile Include="Problems\climb_stairs.cs" />
     <Compile Include="Problems\courses_prerequisite.cs" />
     <Compile Include="Problems\Excel_sheet_Column_title.cs" />
+    <Compile Include="Problems\letter_combination_of_phone_number.cs" />
     <Compile Include="Problems\min_cost_climb_stairs.cs" />
     <Compile Include="Problems\Movies_In_Flight.cs" />
     <Compile Include="DynamicPrograming\Parentheses_Prob.cs" />
