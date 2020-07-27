@@ -106,5 +106,10 @@ namespace ds_algo_problems.DataStructure
             _size++;
             heapifyUp();
         }
+
+        public bool IsEmpty()
+        {
+            return _size == 0;
+        }
     }
 }

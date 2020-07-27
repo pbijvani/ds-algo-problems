@@ -1,0 +1,85 @@
+﻿60 LeetCode problems to solve for coding interview
+https://medium.com/@koheiarai94/60-leetcode-questions-to-prepare-for-coding-interview-8abbb6af589e
+
+Leetcode locked
+http://tiancao.me/Leetcode-Unlocked/index.html
+
+Amazon Online Assessment Questions
+https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions
+
+Tech Interview Handbook
+https://yangshun.github.io/tech-interview-handbook/algorithms/array
+
+C# solution of leetcode
+https://miafish.wordpress.com//?s=Flatten+Binary+Tree+to+Linked+List&search=Go
+
+Other links
+https://www.hackerrank.com/challenges/2d-array/problem
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+https://leetcode.com/points/
+https://miafish.wordpress.com//?s=Flatten+Binary+Tree+to+Linked+List&search=Go
+https://www.geeksforgeeks.org/merge-two-sorted-arrays/
+
+https://www.dailycodingproblem.com/
+
+https://csharp.hotexamples.com/examples/-/PublishXmlRequest/-/php-publishxmlrequest-class-examples.html
+
+
+https://www.geeksforgeeks.org/amazons-asked-interview-questions/
+
+https://www.interviewbit.com
+
+https://www.topcoder.com/solutions/website-development/
+
+https://www.facebook.com/careers/life/preparing-for-your-software-engineering-interview-at-facebook/
+
+http://eloquentjavascript.net/04_data.html
+
+http://bonsaiden.github.io/JavaScript-Garden/
+
+https://bumbu.me/facebook-engineering-interview
+
+https://www.hackerearth.com/practice/notes/finding-prime-numbers-new-style/
+
+https://primes.utm.edu/prove/merged.html
+
+
+
+------------design
+
+https://www.hackingnote.com/en/interview/system-design-interview-questions
+https://www.educative.io/collection/page/5668639101419520/5649050225344512/5728116278296576/preview
+https://www.hiredintech.com/courses/system-design
+https://hackernoon.com/anatomy-of-a-system-design-interview-4cb57d75a53f
+https://www.interviewbit.com/courses/system-design
+https://github.com/checkcheckzz/system-design-interview
+https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview
+https://www.educative.io/collection/5668639101419520/5649050225344512
+
+https://dev.to/fahimulhaq/top-10-system-design-interview-questions-for-software-engineers
+
+**********************
+https://github.com/donnemartin/system-design-primer
+https://github.com/donnemartin/system-design-primer
+
+https://www.hiredintech.com/courses/system-design
+
+https://lethain.com/introduction-to-architecting-systems-for-scale/
+https://github.com/yangshun/tech-interview-handbook/tree/master/design
+
+
+_____________---_______________________________________________________________
+
+Design Amazon User preference system
+(OOD) Design the classes for Amazon comments filtering system
+Write a program to shuffle the songs randomly in a playlist
+https://leetcode.com/problems/group-anagrams I told the interviewer I know the solution for the question. He was fine with it. We tried to improvise the time complexity after I gave the initial solution. He liked my thought process.
+
+
+Design a 2D game and move a robot as per users input
+
+Deep dive for projects and Print boundary of the Binary tree
+
+given set of intervals with weight. Find a heighest interval with weight.
+Example: Input : [[1,5, 10], [3,10,5]] O/P: [3,5,15]
+
