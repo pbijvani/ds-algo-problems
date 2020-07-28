@@ -49,6 +49,7 @@
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
+    <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
     <Compile Include="String\common_word.cs" />
     <Compile Include="_Modrate\Array\container_with_most_water.cs" />
