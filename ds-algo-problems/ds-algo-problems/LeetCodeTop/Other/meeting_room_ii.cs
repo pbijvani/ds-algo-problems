@@ -38,7 +38,7 @@ return 2.
         }
 
         //https://www.programcreek.com/2014/05/leetcode-meeting-rooms-ii-java/
-        // O (N Log N) (fro sort)
+        // O (N Log N) ()
         // Space : O(N)
         public int MinMeetingRooms(int[][] meetings)
         {

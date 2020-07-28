@@ -47,6 +47,7 @@
     <Compile Include="Array\array_find_missing_lowest_positive_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
+    <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
     <Compile Include="String\common_word.cs" />
@@ -216,6 +217,7 @@
     <Folder Include="Print\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="Resources.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
