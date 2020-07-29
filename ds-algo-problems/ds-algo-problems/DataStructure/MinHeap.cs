@@ -111,5 +111,10 @@ namespace ds_algo_problems.DataStructure
         {
             return _size == 0;
         }
+
+        public int Size()
+        {
+            return _size;
+        }
     }
 }

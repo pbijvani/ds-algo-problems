@@ -1,0 +1,4 @@
+﻿(1) Reverse linked list
+	- Using recursion
+	- Using iteration
+	- Using stack
