@@ -28,6 +28,8 @@ namespace ds_algo_problems.LeetCodeTop.Heap
 
         https://leetcode.com/problems/top-k-frequent-elements/
 
+            https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/
+
          */
         public int[] TopKFrequent(int[] nums, int k)
         {

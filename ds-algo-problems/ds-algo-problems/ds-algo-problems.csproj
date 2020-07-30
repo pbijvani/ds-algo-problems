@@ -54,6 +54,7 @@
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
     <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
+    <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
     <Compile Include="_Modrate\Array\container_with_most_water.cs" />
     <Compile Include="Array\find_contiguous_path_target_sum.cs" />
