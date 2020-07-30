@@ -225,6 +225,7 @@
     <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="LeetCodeTop\Stack\Problems.txt" />
     <Content Include="Resources.txt" />
+    <Content Include="YetToSolve.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
