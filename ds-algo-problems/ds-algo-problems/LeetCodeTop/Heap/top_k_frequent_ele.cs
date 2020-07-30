@@ -92,6 +92,124 @@ namespace ds_algo_problems.LeetCodeTop.Heap
 
             return resultArray;
         }
+
+        //Approach 2: Quickselect
+
+        public int[] topKFrequent1(int[] nums, int k)
+        {
+            var map = new Dictionary<int, int>();
+
+            foreach(var num in nums)
+            {
+                if(map.ContainsKey(num))
+                {
+                    map[num] = map[num] + 1;
+                }
+                else
+                {
+                    map.Add(num, 1);
+                }
+            }
+
+            var len = map.Count;
+
+            var unique = new int[len];
+            
+            for(int i = 0; i < len; i++)
+            {
+                unique[i] = map.ElementAt(i).Key;
+            }
+
+            QuickSelect(map, unique, 0, len - 1, len - k);
+
+            return unique.SubArray(len - k, k);
+
+        }
+
+        private void QuickSelect(Dictionary<int, int> map, int[] unique, int left, int right, int k_smallest)
+        {
+            if (left == right) return;
+
+            // select pivot
+            var pivotIndex = left +  ((right - left) / 2);
+
+            // find the pivot position in a sorted list 
+
+            pivotIndex = PartitionQuickSort(map, unique, left, right, pivotIndex);
+            //pivotIndex = Partition(map, unique, left, right, pivotIndex);
+
+            if(pivotIndex == k_smallest)
+            {
+                return;
+            }
+            else if(k_smallest < pivotIndex)
+            {
+                QuickSelect(map, unique, left, pivotIndex - 1, k_smallest);
+            }
+            else
+            {
+                QuickSelect(map, unique, pivotIndex + 1, right, k_smallest);
+            }
+        }
+
+        // Hoare's partition logic : move pivot to end and then perform partition
+        // at end move pivot back to right position.
+        private int Partition(Dictionary<int, int> map, int[] unique, int left, int right, int pivotIndex)
+        {
+            int pivot_frequency = map[unique[pivotIndex]];
+
+            // move pivot to end
+            swap(unique, pivotIndex, right);
+
+            int start_index = left;
+
+            for(int i = left; i <= right; i++)
+            {
+                if(map[unique[i]] < pivot_frequency)
+                {
+                    swap(unique, start_index, i);
+                    start_index++;
+                }
+            }
+
+            // 3. move pivot to its final place
+            swap(unique, start_index, right);
+
+            return start_index;
+        }
+        // Quick sort original partition logic
+        private int PartitionQuickSort(Dictionary<int, int> map, int[] unique, int left, int right, int pivotIndex)
+        {
+            while(left <= right)
+            {
+                while(map[unique[left]] < map[unique[pivotIndex]])
+                {
+                    left++;
+                }
+
+                while(map[unique[right]] > map[unique[pivotIndex]])
+                {
+                    right--;
+                }
+
+                if(left <= right)
+                {
+                    swap(unique, left, right);
+                    left++;
+                    right--;
+                }
+            }
+
+            return left;
+        }
+
+        private void swap(int[] nums, int n1, int n2)
+        {
+            int tmp = nums[n1];
+            nums[n1] = nums[n2];
+            nums[n2] = tmp;
+        }
+
     }
 
     public class ElementFrequency : IComparable
