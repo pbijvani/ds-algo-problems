@@ -1,2 +1,4 @@
 ﻿(1) Two Sum
 - Sorted_Array_Find_Two_Number_That_add_upto_given_number
+(2) First Unique Character in a String
+- first_unique_char
