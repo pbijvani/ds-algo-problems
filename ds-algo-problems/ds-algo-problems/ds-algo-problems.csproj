@@ -223,6 +223,7 @@
     <Folder Include="Print\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LeetCodeTop\HashMap\Index.txt" />
     <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="LeetCodeTop\Stack\Problems.txt" />
     <Content Include="Resources.txt" />

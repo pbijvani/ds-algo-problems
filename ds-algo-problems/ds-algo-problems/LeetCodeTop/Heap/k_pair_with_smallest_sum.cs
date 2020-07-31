@@ -31,7 +31,9 @@ namespace ds_algo_problems.LeetCodeTop.Heap
 
             Input: nums1 = [1,2], nums2 = [3], k = 3
             Output: [1,3],[2,3]
-            Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]         
+            Explanation: All possible pairs are returned from the sequence: [1,3],[2,3]   
+            
+            https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
          */
 
         // Time : O(K Log K)

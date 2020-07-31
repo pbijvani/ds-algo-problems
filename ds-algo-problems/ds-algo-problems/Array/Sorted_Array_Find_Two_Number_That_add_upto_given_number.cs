@@ -19,6 +19,52 @@ namespace ds_algo_problems.Array
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
+        /// 
+
+        // Two pass Hashtable : time O(N)
+        public Tuple<int, int> TwoSum1(int[] numbers, int target)
+        {
+            var dict = new Dictionary<int, int>();
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                dict.Add(numbers[i], i);
+            }
+
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                var missingPart = target - numbers[i];
+
+                if(dict.ContainsKey(missingPart) && dict[missingPart] != i)
+                {
+                    return new Tuple<int, int>(numbers[i], numbers[dict[missingPart]]);
+                }
+            }
+
+            return new Tuple<int, int>(-1, -1);
+        }
+
+        // One pass Hashtable : time O(N)
+        public Tuple<int, int> TwoSumOnePass(int[] numbers, int target)
+        {
+            var dict = new Dictionary<int, int>();
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                var missingPart = target - numbers[i];
+
+                if(dict.ContainsKey(missingPart))
+                {
+                    return new Tuple<int, int>(numbers[i], numbers[dict[missingPart]]);
+                }
+                else
+                    dict.Add(numbers[i], i);
+            }
+
+
+            return new Tuple<int, int>(-1, -1);
+        }
+
         public Tuple<int, int> TwoSum(int[] numbers, int target)
         {
             for (int i = 0, j = numbers.Length; i < j;)
