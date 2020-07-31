@@ -50,6 +50,7 @@
     <Compile Include="DataStructure\Heap.cs" />
     <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\HashMap\intersection_of_two_array.cs" />
+    <Compile Include="LeetCodeTop\HashMap\unique_email_addresses.cs" />
     <Compile Include="LeetCodeTop\Heap\kth_largest_element_in_a_stream.cs" />
     <Compile Include="LeetCodeTop\Heap\k_pair_with_smallest_sum.cs" />
     <Compile Include="LeetCodeTop\Heap\top_k_frequent_ele.cs" />
