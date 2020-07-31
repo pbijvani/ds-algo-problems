@@ -49,6 +49,7 @@
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="DataStructure\Heap.cs" />
     <Compile Include="LeetCodeTop\Heap\kth_largest_element_in_a_stream.cs" />
+    <Compile Include="LeetCodeTop\Heap\k_pair_with_smallest_sum.cs" />
     <Compile Include="LeetCodeTop\Heap\top_k_frequent_ele.cs" />
     <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />

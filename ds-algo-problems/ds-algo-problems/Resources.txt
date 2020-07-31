@@ -4,8 +4,17 @@ https://medium.com/@koheiarai94/60-leetcode-questions-to-prepare-for-coding-inte
 Leet Code Top Interview Questions
 https://leetcode.com/explore/featured/card/top-interview-questions-easy/
 
+30 min read
+https://www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/
+
 Leetcode locked
 http://tiancao.me/Leetcode-Unlocked/index.html
+
+blog on various topics
+https://medium.com/@vaidehijoshi
+https://medium.com/baseds
+
+https://interviewing.io/
 
 Amazon Online Assessment Questions
 https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions
