@@ -77,5 +77,51 @@ namespace ds_algo_problems.LeetCodeTop.HashMap
 
             return res.ToArray();
         }
+
+        /*
+         * Variation: Given array are sorted.
+         * Time: O(M + N)
+         * Space: O(1)
+         */
+        public int[] IntersectionSortedArray(int[] nums1, int[] nums2)
+        {
+            var len1 = nums1.Length;
+            var len2 = nums2.Length;
+
+            if (len1 == 0 || len2 == 0) return new int[] { };
+
+            var ptr1 = 0;
+            var ptr2 = 0;
+
+            var list = new List<int>();
+
+            while(ptr1 < len1 && ptr2 < len2)
+            {
+                if(nums1[ptr1] == nums2[ptr2])
+                {
+                    list.Add(nums1[ptr1]);
+                    ptr1++;
+                    ptr2++;
+                }
+                else if(nums1[ptr1] < nums2[ptr2])
+                {
+                    ptr1++;
+                }
+                else // nums1[ptr1] > nums2[ptr2]
+                {
+                    ptr2++;
+                }
+            }
+
+            return list.ToArray();
+        }
+
+        public void Test()
+        {
+            var arr1 = new int[] { 1, 2, 2, 1 };
+            var arr2 = new int[] { 2, 2 };
+
+            var res = IntersectionSortedArray(arr1, arr2);
+        }
     }
 }
