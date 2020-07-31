@@ -48,6 +48,7 @@
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="DataStructure\Heap.cs" />
+    <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\Heap\kth_largest_element_in_a_stream.cs" />
     <Compile Include="LeetCodeTop\Heap\k_pair_with_smallest_sum.cs" />
     <Compile Include="LeetCodeTop\Heap\top_k_frequent_ele.cs" />
