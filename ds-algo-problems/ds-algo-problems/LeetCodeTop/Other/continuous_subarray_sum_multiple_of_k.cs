@@ -73,9 +73,55 @@ namespace ds_algo_problems.LeetCodeTop.Other
             return false;
         }
 
+        /*
+         * Variation : count number of subarray with same confition.
+         * Can have sub array size equal to 1
+         */
+        public int CountSubarraySumMultiple(int[] nums, int k)
+        {
+            var dict = new Dictionary<int, int>();
+            dict.Add(0, 1);
+
+            int runningMod = 0;
+            int count = 0;
+
+            for(int i = 0; i < nums.Length; i++)
+            {
+                if(k == 0)
+                {
+                    runningMod = runningMod + nums[i];
+                }
+                else
+                {
+                    runningMod = (runningMod + nums[i]) % k;
+                }
+
+                if (dict.ContainsKey(runningMod))
+                {
+                    count = count + dict[runningMod];
+
+                    dict[runningMod] = dict[runningMod] + 1;
+                }
+                else
+                {
+                    dict.Add(runningMod, 1);
+                }                              
+            }
+            
+
+            return count;
+        }
 
 
-      
+        public void testCOunt()
+        {
+            var arr = new int[] { 23, 2, 6, 4, 7 };
+
+            //var arr = new int[] { 5, 0, 0 };
+
+            var res = CountSubarraySumMultiple(arr, 6);
+        }
+
 
         public void test()
         {
