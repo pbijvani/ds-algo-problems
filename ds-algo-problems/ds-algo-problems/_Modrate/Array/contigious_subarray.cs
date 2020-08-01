@@ -8,6 +8,13 @@ namespace ds_algo_problems._Modrate.Array
 {
     public class contigious_subarray
     {
+        /// <summary>
+        /// Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
+        //For example, given the array[−2, 1,−3, 4,−1, 2, 1,−5, 4],
+        //the contiguous subarray[4,−1, 2, 1] has the largest sum = 6.
+        /// </summary>
+        /// <param name="A"></param>
+        /// <returns></returns>
         public int[] SubArrayLargestSum(int[] input)
         {
             int maxSum = input[0];
@@ -37,10 +44,16 @@ namespace ds_algo_problems._Modrate.Array
                     maxSum = runningSum;
                     startIndex = startIndexRunning;
                     endIndex = endIndexRunning;
-                }                
-                maxSum = System.Math.Max(maxSum, runningSum);
+                }                                
             }
-            return input.Slice(startIndex, endIndex);
+            return input.SubArray(startIndex, endIndex-startIndex+1);
+        }
+
+        public void test()
+        {
+            var arr = new int[] { -2, 1,-3, 4,-1, 2, 1,-5, 4 };
+
+            var res = SubArrayLargestSum(arr);
         }
     }
 }
