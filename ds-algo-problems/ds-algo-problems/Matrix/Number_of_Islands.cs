@@ -14,14 +14,15 @@ namespace ds_algo_problems.Matrix
         /// An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. 
         /// You may assume all four edges of the grid are all surrounded by water
         /// </summary>
-        private bool[,] visitedCells;
-        public int noOfIslands = 0;
+
         public int NumberOfIslands(int[,] input)
         {
             var rows = input.GetLength(0);
             var cols = input.GetLength(1);
 
-            visitedCells = new bool[rows, cols];
+            int islandCount = 0;
+
+            var visitedCells = new bool[rows, cols];
 
             for (int i = 0; i < rows; i++)
             {
@@ -29,26 +30,49 @@ namespace ds_algo_problems.Matrix
                 {
                     if (input[i, j] == 1 && !visitedCells[i, j])
                     {
-                        VisitNearbyLand(input, i, j);
-                        noOfIslands++;
+                        VisitNearbyLand(input, i, j, visitedCells);
+                        islandCount++;
                     }
                 }
             }
             return 0;
         }
 
-        public void VisitNearbyLand(int[,] array, int row, int col)
+        int[] dirX = new int[4] { 1, -1, 0, 0 };
+        int[] dirY = new int[4] { 0, 0, 1, -1 };
+        public void VisitNearbyLand(int[,] input, int row, int col, bool[,] visisted)
         {
-            if (row < 0 || row >= array.GetLength(0)) return;
-            if (col < 0 || col >= array.GetLength(1)) return;
+            visisted[row, col] = true;
 
-            if (visitedCells[row, col]) return;
-            visitedCells[row, col] = true;
+            for (int i = 0; i < dirX.Length; i++)
+            {
+                var newX = row + dirX[i];
+                var newY = col + dirY[i];
 
-            VisitNearbyLand(array, row, col + 1);
-            VisitNearbyLand(array, row, col - 1);
-            VisitNearbyLand(array, row + 1, col);
-            VisitNearbyLand(array, row - 1, col);
+                if (newX < 0 || newY < 0 || newX >= input.GetLength(0) || newY >= input.GetLength(1))
+                    continue;
+
+                if (visisted[newX, newY])
+                    continue;
+
+                if (input[newX, newY] == 0)
+                    continue;
+
+                VisitNearbyLand(input, newX, newY, visisted);
+            }
+        }
+
+        public void test()
+        {
+            var matrix = new int[,]
+            {
+                { 1, 1, 0, 1, 1 },
+                { 1, 1, 0, 0, 0 },
+                { 0, 0, 1, 0, 0 },
+                { 0, 0, 0, 1, 1 }
+            };
+
+            var cnt = NumberOfIslands(matrix);
         }
 
     }
