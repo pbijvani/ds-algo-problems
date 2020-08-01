@@ -56,6 +56,7 @@
     <Compile Include="LeetCodeTop\Heap\k_pair_with_smallest_sum.cs" />
     <Compile Include="LeetCodeTop\Heap\top_k_frequent_ele.cs" />
     <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
+    <Compile Include="LeetCodeTop\Other\continuous_subarray_sum.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
     <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
