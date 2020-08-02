@@ -48,6 +48,7 @@
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="DataStructure\Heap.cs" />
+    <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
     <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\HashMap\intersection_of_two_array.cs" />
     <Compile Include="LeetCodeTop\HashMap\subarray_sum_equals_k.cs" />
@@ -229,6 +230,7 @@
     <Folder Include="Print\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LeetCodeTop\Graph_Matrix\Index.txt" />
     <Content Include="LeetCodeTop\HashMap\Index.txt" />
     <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="LeetCodeTop\Stack\Problems.txt" />
