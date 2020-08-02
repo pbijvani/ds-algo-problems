@@ -1,3 +1,6 @@
 ﻿(1) Number of Islands
 	No_of_Islands
 (2) Max Area of Island
+https://leetcode.com/problems/max-area-of-island/solution/
+(3) Number of Connected Components in an Undirected Graph
+https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
