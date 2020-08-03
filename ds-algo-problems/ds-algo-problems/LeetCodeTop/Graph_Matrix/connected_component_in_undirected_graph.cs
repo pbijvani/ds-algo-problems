@@ -116,13 +116,56 @@ namespace ds_algo_problems.LeetCodeTop.Graph_Matrix
         }
         #endregion
 
+        #region Union-Find Method
+
+        private int[] father;
+        public int countComponents(int n, int[,] edges)
+        {
+
+            var set = new HashSet<int>();
+            father = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                father[i] = i;
+            }
+            for (int i = 0; i < edges.Length; i++)
+            {
+                union(edges[i,0], edges[i,1]);
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                set.Add(find(i));
+            }
+            return set.Count;
+        }
+
+        int find(int node)
+        {
+            if (father[node] == node)
+            {
+                return node;
+            }
+            father[node] = find(father[node]);
+            return father[node];
+        }
+
+        void union(int node1, int node2)
+        {
+            father[find(node1)] = find(node2);
+        }
+
+        #endregion
+
         public void test()
         {
             var arr = new int[,] { { 0, 1 }, { 1, 2 }, { 3, 4 } };
 
             //var count = CountConnectedComponentDSF(5, arr);
 
-            var count = CountConnectedComponentBSF(5, arr);
+            //var count = CountConnectedComponentBSF(5, arr);
+
+            var count = countComponents(5, arr);
         }
     }
 

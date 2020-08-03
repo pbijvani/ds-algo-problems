@@ -50,6 +50,7 @@
     <Compile Include="DataStructure\Heap.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
+    <Compile Include="LeetCodeTop\Graph_Matrix\word_ladder.cs" />
     <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\HashMap\intersection_of_two_array.cs" />
     <Compile Include="LeetCodeTop\HashMap\subarray_sum_equals_k.cs" />
@@ -225,6 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="OtherResources\60 LeetCode problems to solve for coding interiew.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Other\" />
