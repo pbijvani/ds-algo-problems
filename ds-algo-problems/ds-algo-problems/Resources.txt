@@ -10,6 +10,10 @@ https://www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/
 Leetcode locked
 http://tiancao.me/Leetcode-Unlocked/index.html
 
+50 questions
+https://www.byte-by-byte.com/coding-interview-questions/all/
+https://bradfieldcs.com/algos/graphs/word-ladder/
+
 blog on various topics
 https://medium.com/@vaidehijoshi
 https://medium.com/baseds
@@ -31,6 +35,8 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
 https://leetcode.com/points/
 https://miafish.wordpress.com//?s=Flatten+Binary+Tree+to+Linked+List&search=Go
 https://www.geeksforgeeks.org/merge-two-sorted-arrays/
+
+
 
 https://www.dailycodingproblem.com/
 

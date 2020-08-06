@@ -48,6 +48,7 @@
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
     <Compile Include="Array\Binary_Search_In_Array.cs" />
     <Compile Include="DataStructure\Heap.cs" />
+    <Compile Include="Graph.Problems\bfs_with_trace_path.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
