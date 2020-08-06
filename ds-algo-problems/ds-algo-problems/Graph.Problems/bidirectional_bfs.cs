@@ -18,7 +18,10 @@ namespace ds_algo_problems.Graph1.Problems
             var visitedDest = new HashSet<Graph>();
 
             queueSrc.Enqueue(src);
+            visitedSrc.Add(src);
+
             queueDest.Enqueue(dest);
+            visitedDest.Add(dest);
 
             while(queueSrc.Any() || queueDest.Any())
             {
@@ -40,9 +43,7 @@ namespace ds_algo_problems.Graph1.Problems
         {
             if(queue.Any())
             {
-                var currNode = queue.Dequeue();
-
-                visistedFromThisSide.Add(currNode);
+                var currNode = queue.Dequeue();                
 
                 var adjucentNodes = currNode.Descendant;
 
@@ -58,6 +59,7 @@ namespace ds_algo_problems.Graph1.Problems
                     {
                         // if node is not visisted from this side then add it to queue
                         queue.Enqueue(node);
+                        visistedFromThisSide.Add(node);
                     }
                 }
             }
