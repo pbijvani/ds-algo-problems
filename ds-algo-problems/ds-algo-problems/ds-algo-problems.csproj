@@ -66,6 +66,7 @@
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
     <Compile Include="LeetCodeTop\Other\subarray_sums_divisible_by_k.cs" />
     <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
+    <Compile Include="LeetCodeTop\Tree\minimum_depth_of_binary_tree.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
@@ -240,6 +241,7 @@
     <Content Include="LeetCodeTop\HashMap\Index.txt" />
     <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="LeetCodeTop\Stack\Problems.txt" />
+    <Content Include="LeetCodeTop\Tree\Index.txt" />
     <Content Include="Resources.txt" />
     <Content Include="YetToSolve.txt" />
   </ItemGroup>
