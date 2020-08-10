@@ -23,6 +23,8 @@ namespace ds_algo_problems.LeetCodeTop.Tree
            -3   9
            /   /
          -10  5
+
+        https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
      */
     public class sorted_array_to_bst
     {
