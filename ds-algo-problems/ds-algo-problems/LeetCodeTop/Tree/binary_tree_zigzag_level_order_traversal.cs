@@ -29,7 +29,7 @@ namespace ds_algo_problems.LeetCodeTop.Tree
      */
     public class binary_tree_zigzag_level_order_traversal
     {      
-        // BFS solution
+        // Solution 1 : BFS solution
         public List<List<int>> ZigzagLevelOrder(TreeNode root)
         {
             if (root == null) return new List<List<int>>();
@@ -84,10 +84,10 @@ namespace ds_algo_problems.LeetCodeTop.Tree
                 }
             };
 
-            var res = ZigzagLevelOrder(root);
+            var res = ZigzagLevelOrderStack(root);
         }
 
-        // DFS solution
+        // Solution 2 : DFS solution
         public List<List<int>> ZigzagLevelOrderDFS(TreeNode root)
         {
             var res = new List<List<int>>();
@@ -117,6 +117,64 @@ namespace ds_algo_problems.LeetCodeTop.Tree
 
             ZigzagLevelOrderDFSHelper(res, root.left, depth + 1);
             ZigzagLevelOrderDFSHelper(res, root.right, depth + 1);
+        }
+
+        // Solution 3 : BFS using two stack
+
+        public List<List<int>> ZigzagLevelOrderStack(TreeNode root)
+        {
+            if (root == null) return new List<List<int>>();
+
+            var result = new List<List<int>>();
+
+            var stackEven = new Stack<TreeNode>();
+            var stackOdd = new Stack<TreeNode>();
+
+            var depth = 0;
+
+            stackEven.Push(root);
+
+            while (stackEven.Any() || stackOdd.Any())
+            {
+                var levelOrderList = new List<int>();
+                var stack = depth % 2 == 0 ? stackEven : stackOdd;
+                var secondStack = depth % 2 == 0 ? stackOdd : stackEven;
+
+                var len = stack.Count;
+                for (int i = 0; i < len; i++)
+                {
+                    var node = stack.Pop();
+
+                    levelOrderList.Add(node.data);
+
+                    if (depth % 2 == 0)
+                    {
+                        if (node.left != null)
+                        {
+                            secondStack.Push(node.left);
+                        }
+                        if (node.right != null)
+                        {
+                            secondStack.Push(node.right);
+                        }
+                    }
+                    else
+                    {
+                        if (node.right != null)
+                        {
+                            secondStack.Push(node.right);
+                        }
+                        if (node.left != null)
+                        {
+                            secondStack.Push(node.left);
+                        }                        
+                    }
+                }
+                depth = depth + 1;
+                result.Add(levelOrderList);
+            }
+
+            return result;
         }
     }
 }
