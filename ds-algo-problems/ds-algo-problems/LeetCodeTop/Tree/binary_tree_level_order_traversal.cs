@@ -42,7 +42,8 @@ namespace ds_algo_problems.LeetCodeTop.Tree
             while(queue.Any())
             {
                 var levelOrderList = new List<int>();
-                for(int i = 0; i < queue.Count; i++)
+                var len = queue.Count;
+                for (int i = 0; i < len; i++)
                 {
                     var node = queue.Dequeue();
 
