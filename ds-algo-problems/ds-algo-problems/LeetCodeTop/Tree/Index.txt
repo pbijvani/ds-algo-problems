@@ -3,3 +3,6 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
 (2) Minimum Depth of Binary Tree
 https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
+(3) Validate Binary Search Tree
+https://leetcode.com/problems/validate-binary-search-tree/aaazz
