@@ -38,18 +38,13 @@ namespace ds_algo_problems.LeetCodeTop.Tree
 
             if (lenPre == 0 || lenPost == 0 || lenPre != lenPost) return null;
 
-            var postMap = new Dictionary<int, int>();
-            for(int i = 0; i < post.Length; i++)
-            {
-                postMap.Add(post[i], i);
-            }
-
-            var res = BuildTreeHelper(pre, post, postMap);
+            //var res = BuildTreeHelper(pre, post);
+            var res = BuildTreeHelperIndexes(pre, post, 0, 0, lenPost);
 
             return res;
         }
 
-        private TreeNode BuildTreeHelper(int[] pre, int[] post, Dictionary<int, int> postMap)
+        private TreeNode BuildTreeHelper(int[] pre, int[] post)
         {
             var n = pre.Length;
 
@@ -64,8 +59,8 @@ namespace ds_algo_problems.LeetCodeTop.Tree
                 if (post[i] == pre[1])
                     L = i + 1;
 
-            root.left = BuildTreeHelper(SubArray(pre, 1, L), SubArray(post, 0, L), postMap);
-            root.right = BuildTreeHelper(SubArray(pre, L + 1, n - L), SubArray(post, L, n - L - 1), postMap);
+            root.left = BuildTreeHelper(SubArray(pre, 1, L), SubArray(post, 0, L));
+            root.right = BuildTreeHelper(SubArray(pre, L + 1, n - L), SubArray(post, L, n - L - 1));
 
             return root;
         }
@@ -81,6 +76,25 @@ namespace ds_algo_problems.LeetCodeTop.Tree
             var postorder = new int[] { 4, 5, 2, 6, 7, 3, 1 };
 
             var res = ConstructFromPrePost(preorder, postorder);
+        }
+
+        private TreeNode BuildTreeHelperIndexes(int[] pre, int[] post, int preIndx, int postIndx, int n)
+        {
+            if (n == 0) return null;
+
+            var root = new TreeNode(pre[preIndx]);
+
+            if (n == 1) return root;
+
+            int L = 0;
+            for (int i = postIndx; i < postIndx + n - 1; ++i)
+                if (post[i] == pre[preIndx + 1])
+                    L = i - postIndx + 1;
+
+            root.left = BuildTreeHelperIndexes(pre, post, preIndx + 1, postIndx, L);
+            root.right = BuildTreeHelperIndexes(pre, post, preIndx + 1 + L, postIndx + L, n - L - 1);
+
+            return root;
         }
     }
 }
