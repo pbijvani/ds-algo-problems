@@ -67,6 +67,7 @@
     <Compile Include="LeetCodeTop\Other\subarray_sums_divisible_by_k.cs" />
     <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
     <Compile Include="LeetCodeTop\Tree\binary_tree_from_inorder_and_preorder_traversal.cs" />
+    <Compile Include="LeetCodeTop\Tree\binary_tree_from_preorder_and_postorder_traversal.cs" />
     <Compile Include="LeetCodeTop\Tree\binary_tree_level_order_traversal.cs" />
     <Compile Include="LeetCodeTop\Tree\binary_tree_zigzag_level_order_traversal.cs" />
     <Compile Include="LeetCodeTop\Tree\merge_two_binary_tree.cs" />

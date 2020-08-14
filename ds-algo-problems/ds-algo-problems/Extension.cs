@@ -22,6 +22,11 @@ namespace ds_algo_problems
             return result;
         }
 
+        public static T[] SubArray1<T>(this T[] data, int index, int length)
+        {
+            return data.Skip(index).Take(length).ToArray();
+        }
+
         public static T[] Slice<T>(this T[] source, int start, int end)
         {
             // Handles negative ends.
