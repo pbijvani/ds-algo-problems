@@ -27,7 +27,7 @@ namespace ds_algo_problems.LeetCodeTop
         Output : 6
         https://www.geeksforgeeks.org/painting-fence-algorithm/     
      */
-    public class dynamic_programing
+    public class paint_fence
     {
         public long CountWays(int n, int k)
         {

@@ -51,7 +51,7 @@
     <Compile Include="Graph.Problems\bfs_with_trace_path.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs_with_trace_path.cs" />
-    <Compile Include="LeetCodeTop\dynamic_programing.cs" />
+    <Compile Include="LeetCodeTop\dynamic_programing\paint_fence.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\word_ladder.cs" />
