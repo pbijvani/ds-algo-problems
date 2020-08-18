@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ds_algo_problems.LeetCodeTop
+namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 {
     /*
         Painting Fence Algorithm

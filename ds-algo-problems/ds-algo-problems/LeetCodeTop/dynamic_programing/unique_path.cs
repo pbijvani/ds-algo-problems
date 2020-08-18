@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ds_algo_problems.LeetCodeTop.HashMap
+namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 {
     /*
         A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
