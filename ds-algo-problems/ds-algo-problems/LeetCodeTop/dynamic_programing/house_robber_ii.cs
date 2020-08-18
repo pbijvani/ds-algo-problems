@@ -63,5 +63,38 @@ namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 
             return prev1;
         }
+
+        // Attempt to combine both iteration together
+        public int RobHelperAnother(int[] nums)
+        {
+            if (nums.Length == 0) return 0;
+            if (nums.Length == 1) return nums[0];
+            if (nums.Length == 2) return System.Math.Max(nums[0], nums[1]);
+
+            // Split 1 : 0 to len - 2
+            // Split 2 : 1 to len - 1
+
+            var prev2Split2 = 0;
+            var prev1Split2 = 0;
+
+            var prev2Split1 = 0;
+            var prev1Split1 = nums[0];
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if(i < nums.Length -1 )
+                {
+                    var tempSplit1 = System.Math.Max(nums[i] + prev2Split1, prev1Split1);
+                    prev2Split1 = prev1Split1;
+                    prev1Split1 = tempSplit1;
+                }
+
+                var tempSplit2 = System.Math.Max(nums[i] + prev2Split2, prev1Split2);
+                prev2Split2 = prev1Split2;
+                prev1Split2 = tempSplit2;
+            }
+
+            return System.Math.Max(prev1Split1, prev1Split2);
+        }
     }
 }
