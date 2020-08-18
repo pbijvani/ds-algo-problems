@@ -51,6 +51,7 @@
     <Compile Include="Graph.Problems\bfs_with_trace_path.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs_with_trace_path.cs" />
+    <Compile Include="LeetCodeTop\dynamic_programing\house_robber.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\longest_increasing_subsequence.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\paint_fence.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\unique_path_ii.cs" />

@@ -117,7 +117,7 @@ Space complexity : O(n^2)
             {
                 var maxVal = 0;
 
-                for(int j = 0; j < nums.Length; j++)
+                for(int j = 0; j < i; j++)
                 {
                     if(nums[i] < nums[i])
                     {
