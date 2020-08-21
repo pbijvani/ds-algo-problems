@@ -136,5 +136,40 @@ namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 
             return dp[len - 1, 0];
         }
+
+                /*
+         * same as above Dynamic programming implementation. just with constant space
+         * Takes O(N) time and O(1) spaces
+         */
+        public int MaxProfit3(int[] prices)
+        {
+            if (prices.Length <= 1) return 0;
+
+            if (prices.Length == 2)
+            {
+                if (prices[0] < prices[1])
+                {
+                    return prices[1] - prices[0];
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            var len = prices.Length;            
+
+            var prevNoStock = 0;
+            var prevStock = prices[0] * -1;
+            // 0 - no stock in hand
+            // 1 = stock in hand
+
+            for (int i = 2; i < len; i++)
+            {
+                prevNoStock = System.Math.Max(prevNoStock, prevStock + prices[i]);
+                prevStock = System.Math.Max(prevStock, prevNoStock - prices[i]);
+            }
+
+            return prevNoStock;
+        }
     }
 }

@@ -104,5 +104,12 @@ namespace ds_algo_problems.Problems
 
             return maxProfit;
         }
+
+        public void test()
+        {
+            var nums = new int[] { 1,2,3,4,5 };
+
+            var res = MaxProfit2(nums);
+        }
     }
 }
