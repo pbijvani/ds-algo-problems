@@ -33,11 +33,11 @@ Space Complexity: \mathcal{O}(nk)O(nk) without state-compressed, and \mathcal{O}
             if (k < 0 || n < 2) return 0;
 
             // 2k > n is a special case and can be addressed easily
-            if(2 * k > n)
+            if (2 * k > n)
             {
                 int result = 0;
 
-                for(int i = 1; i < n; i++)
+                for (int i = 1; i < n; i++)
                 {
                     result = result + System.Math.Max(0, prices[i] - prices[i - 1]);
                 }
@@ -49,12 +49,12 @@ Space Complexity: \mathcal{O}(nk)O(nk) without state-compressed, and \mathcal{O}
             // dp[price, transaction, buy/sell (hold/nohold)]
             // 0 = no hold
             // 1 = hold
-            var dp = new int[n,k + 1,2];
+            var dp = new int[n, k + 1, 2];
 
             // Initialize array
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                for(int j = 0; j <= k; k++)
+                for (int j = 0; j <= k; j++)
                 {
                     dp[i, j, 0] = int.MinValue;
                     dp[i, j, 1] = int.MinValue;
@@ -63,18 +63,18 @@ Space Complexity: \mathcal{O}(nk)O(nk) without state-compressed, and \mathcal{O}
 
             // Base case
             dp[0, 0, 0] = 0; // First day not holding anything
-            dp[0, 0, 0] = prices[0] * -1; // bought share on first day
+            dp[0, 0, 1] = prices[0] * -1; // bought share on first day
 
             // Dynamic Programming 
             for (int i = 1; i < n; i++)
             {
-                for (int j = 0; j <= k; k++)
+                for (int j = 0; j <= k; j++)
                 {
                     // not holding stock, 
                     // Max of (value at prev day, sold today which you were holding prev day)
                     dp[i, j, 0] = System.Math.Max(dp[i - 1, j, 0], dp[i - 1, j, 1] + prices[i]);
 
-                    if(j > 0) // // you can't hold stock without any transaction
+                    if (j > 0) // // you can't hold stock without any transaction
                     {
                         // holding stock
                         // max of (value at prev day, bought today so price from last transaction any prv day minus price you paid today
@@ -84,12 +84,12 @@ Space Complexity: \mathcal{O}(nk)O(nk) without state-compressed, and \mathcal{O}
             }
 
             int res = 0;
-            for(int i = 0; i <= k; i++)
+            for (int i = 0; i <= k; i++)
             {
                 res = System.Math.Max(res, dp[n - 1, i, 0]);
             }
 
-            return 0;
+            return res;
         }
 
         public int BestProfit(int[] prices, int k)
@@ -113,6 +113,11 @@ Space Complexity: \mathcal{O}(nk)O(nk) without state-compressed, and \mathcal{O}
             }
 
             return dt[k, len - 1];
+        }
+
+        public void test()
+        {
+            var res = BestProfit1(new int[] { 1, 2 }, 1);
         }
     }
 }
