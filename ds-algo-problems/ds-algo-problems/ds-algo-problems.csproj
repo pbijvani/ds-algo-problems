@@ -52,6 +52,7 @@
     <Compile Include="Graph.Problems\bidirectional_bfs.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs_with_trace_path.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\best_time_to_buy_and_sell_stock.cs" />
+    <Compile Include="LeetCodeTop\dynamic_programing\best_time_to_buy_and_sell_stock_max_two_transaction.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\best_time_to_buy_and_sell_stock_one_transaction.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\house_robber.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\house_robber_ii.cs" />
@@ -148,7 +149,7 @@
     <Compile Include="Matrix\Set_0_to_row_and_col_if_element_is_0.cs" />
     <Compile Include="Matrix\shortest_bridge.cs" />
     <Compile Include="Problems\Best_Time_To_Buy_And_Sell_Stock.cs" />
-    <Compile Include="Problems\Best_Time_To_Buy_And_Sell_Stock_k_transaction.cs" />
+    <Compile Include="LeetCodeTop\dynamic_programing\Best_Time_To_Buy_And_Sell_Stock_k_transaction.cs" />
     <Compile Include="Problems\best_time_to_buy_sell_stock_with_cooldown.cs" />
     <Compile Include="Problems\climb_stairs.cs" />
     <Compile Include="Problems\courses_prerequisite.cs" />

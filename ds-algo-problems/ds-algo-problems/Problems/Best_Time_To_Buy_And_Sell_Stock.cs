@@ -107,7 +107,9 @@ namespace ds_algo_problems.Problems
 
         public void test()
         {
-            var nums = new int[] { 1,2,3,4,5 };
+            //var nums = new int[] { 1,2,3,4,5 };
+
+            var nums = new int[] { 7, 1, 5, 3, 6, 4 };
 
             var res = MaxProfit2(nums);
         }
