@@ -59,6 +59,7 @@
     <Compile Include="LeetCodeTop\dynamic_programing\longest_increasing_subsequence.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\paint_fence.cs" />
     <Compile Include="LeetCodeTop\dynamic_programing\unique_path_ii.cs" />
+    <Compile Include="LeetCodeTop\dynamic_programing\word_break.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\word_ladder.cs" />
