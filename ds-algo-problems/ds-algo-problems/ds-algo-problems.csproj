@@ -51,6 +51,7 @@
     <Compile Include="Graph.Problems\bfs_with_trace_path.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs.cs" />
     <Compile Include="Graph.Problems\bidirectional_bfs_with_trace_path.cs" />
+    <Compile Include="LeetCodeTop\binary_search\capacity_to_ship_packages.cs" />
     <Compile Include="LeetCodeTop\binary_search\find_minimum_in_sorted_rotated_array.cs" />
     <Compile Include="LeetCodeTop\binary_search\insert_position.cs" />
     <Compile Include="LeetCodeTop\binary_search\search_in_rotated_array.cs" />
