@@ -27,6 +27,10 @@ namespace ds_algo_problems.LeetCodeTop.sliding_window
                      Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
     
         https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+        additional similar problem:
+        https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+        https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
      */
 
     /*
