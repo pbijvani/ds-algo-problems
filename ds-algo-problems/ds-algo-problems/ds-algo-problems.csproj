@@ -85,6 +85,7 @@
     <Compile Include="LeetCodeTop\recursion\split_bst.cs" />
     <Compile Include="LeetCodeTop\sliding_window\longest_substriing_without_repeating_char.cs" />
     <Compile Include="LeetCodeTop\sliding_window\minimum_size_subarray_sum.cs" />
+    <Compile Include="LeetCodeTop\sliding_window\minimum_window_substring.cs" />
     <Compile Include="LeetCodeTop\Stack\valid-parentheses.cs" />
     <Compile Include="LeetCodeTop\Tree\binary_tree_from_inorder_and_postorder_traversal.cs" />
     <Compile Include="LeetCodeTop\Tree\binary_tree_from_inorder_and_preorder_traversal.cs" />
