@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.LeetCodeTop.sliding_window
 {
+    // https://leetcode.com/problems/minimum-window-substring/solution/
     public class minimum_window_substring
     {
+        /*
+         * Approach 1 : sliding window
+         * 
+         * Complexity Analysis
+
+            Time Complexity: O(|S| + |T|)O(∣S∣+∣T∣) where |S| and |T| represent the lengths of strings SS and TT. In the worst case we might end up visiting every element of string SS twice, once by left pointer and once by right pointer. |T|∣T∣ represents the length of string TT.
+
+            Space Complexity: O(|S| + |T|)O(∣S∣+∣T∣). |S|∣S∣ when the window size is equal to the entire string SS. |T|∣T∣ when TT has all unique characters.
+         */
         public string MinWindow(string s, string t)
         {
             var sLen = s.Length;
@@ -89,6 +99,14 @@ namespace ds_algo_problems.LeetCodeTop.sliding_window
 
             return minBegin == -1 ? "" : s.Substring(minBegin, minEnd - minBegin + 1);
         }
+
+        /*
+         * Approach 2 : improved sliding window. Useful when t is significantly smaller than s
+         * 
+         *   S = "ABCDDDDDDEEAFFBC" T = "ABC"
+              filtered_S = [(0, 'A'), (1, 'B'), (2, 'C'), (11, 'A'), (14, 'B'), (15, 'C')]
+              Here (0, 'A') means in string S character A is at index 0.
+         */
 
         public void test()
         {
