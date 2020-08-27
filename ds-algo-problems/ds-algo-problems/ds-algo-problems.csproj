@@ -68,6 +68,7 @@
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\word_ladder.cs" />
+    <Compile Include="LeetCodeTop\greedy_backtracking\permutations.cs" />
     <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\HashMap\intersection_of_two_array.cs" />
     <Compile Include="LeetCodeTop\HashMap\subarray_sum_equals_k.cs" />

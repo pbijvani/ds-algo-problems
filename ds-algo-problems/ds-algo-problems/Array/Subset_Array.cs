@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Array
 {
+    /*
+     * https://leetcode.com/problems/subsets/solution/
+     * 
+     * All solution O (N * 2N) time and space
+     */
     class Subset_Array
     {
         /// <summary>
         /// no of subset : 2 Powrer(n)
         /// </summary>
         /// <param name="input"></param>
+        /// 
         public void ArraySubset(char[] input)
         {
             var count = System.Math.Pow(2, input.Length);
@@ -71,6 +77,7 @@ namespace ds_algo_problems.Array
 
         }
 
+        //Approach 1: Cascading
         // Another way to look at problem : 6/11/2020
         // P(a1, a2) = {}, {a1}, {a2}, {a1, a2}
         // P(a1, a2, a3) = Add a3 into P (a1, a2)
