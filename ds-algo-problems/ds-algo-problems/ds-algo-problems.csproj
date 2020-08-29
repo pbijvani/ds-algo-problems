@@ -68,6 +68,8 @@
     <Compile Include="LeetCodeTop\Graph_Matrix\connected_component_in_undirected_graph.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\max_area_of_island.cs" />
     <Compile Include="LeetCodeTop\Graph_Matrix\word_ladder.cs" />
+    <Compile Include="LeetCodeTop\greedy_backtracking\combination_sum.cs" />
+    <Compile Include="LeetCodeTop\greedy_backtracking\combination_sum_ii.cs" />
     <Compile Include="LeetCodeTop\greedy_backtracking\permutations.cs" />
     <Compile Include="LeetCodeTop\HashMap\group_anagrams.cs" />
     <Compile Include="LeetCodeTop\HashMap\intersection_of_two_array.cs" />
@@ -270,6 +272,7 @@
   <ItemGroup>
     <Content Include="LeetCodeTop\dynamic_programing\Index.txt" />
     <Content Include="LeetCodeTop\Graph_Matrix\Index.txt" />
+    <Content Include="LeetCodeTop\greedy_backtracking\index.txt" />
     <Content Include="LeetCodeTop\HashMap\Index.txt" />
     <Content Include="LeetCodeTop\LinkedList\TextFile1.txt" />
     <Content Include="LeetCodeTop\Stack\Problems.txt" />
