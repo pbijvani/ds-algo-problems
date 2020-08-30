@@ -8,6 +8,9 @@ namespace ds_algo_problems.Problems
 {
     class Parentheses_Prob
     {
+        /*
+         * https://leetcode.com/problems/generate-parentheses/solution/
+         */
         public List<string> GenerateParanth(int count)
         {
             char[] str = new char[count * 2];
@@ -39,6 +42,23 @@ namespace ds_algo_problems.Problems
             }
         }
 
+        public void generateCombination1(List<string> result, int open, int close, string current, int max)
+        {
+            if (current.Length == max * 2)
+            {
+                result.Add(current);
+                return;
+            }
 
+            if (open < max)
+            {
+                generateCombination1(result, open + 1, close, current + "(", max);
+            }
+
+            if (close < open)
+            {
+                generateCombination1(result, open, close + 1, current + ")", max);
+            }
+        }
     }
 }

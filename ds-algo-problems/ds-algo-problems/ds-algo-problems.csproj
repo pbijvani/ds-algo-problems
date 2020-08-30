@@ -172,7 +172,7 @@
     <Compile Include="Problems\letter_combination_of_phone_number.cs" />
     <Compile Include="Problems\min_cost_climb_stairs.cs" />
     <Compile Include="Problems\Movies_In_Flight.cs" />
-    <Compile Include="DynamicPrograming\Parentheses_Prob.cs" />
+    <Compile Include="LeetCodeTop\greedy_backtracking\Parentheses_Prob.cs" />
     <Compile Include="Problems\overlaping_rectangles.cs" />
     <Compile Include="Problems\Pascals_Triangle.cs" />
     <Compile Include="Problems\tower_hop_problem.cs" />
