@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.youtube
 {
+    //https://leetcode.com/problems/move-zeroes/solution/
     public class move_all_zero_in_array_to_end
     {
         /*
@@ -63,6 +64,32 @@ namespace ds_algo_problems.youtube
             }
 
             return input;
+        }
+
+        // Same as above
+        public void MoveZeroes(int[] nums)
+        {
+            var len = nums.Length;
+
+            var indexNonZero = 0;
+            var runningIndex = 0;
+
+            while (runningIndex < len)
+            {
+                if (nums[runningIndex] != 0)
+                {
+                    nums[indexNonZero] = nums[runningIndex];
+                    indexNonZero++;
+                }
+                runningIndex++;
+            }
+
+            while (indexNonZero < len)
+            {
+                nums[indexNonZero] = 0;
+                indexNonZero++;
+            }
+
         }
     }
 }

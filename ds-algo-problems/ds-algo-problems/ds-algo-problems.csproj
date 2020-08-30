@@ -233,7 +233,7 @@
     <Compile Include="youtube\intersection_between_3_array.cs" />
     <Compile Include="youtube\longest_consecutive_sequence_in_array.cs" />
     <Compile Include="youtube\matrix_top_left_to_bottom_right.cs" />
-    <Compile Include="youtube\move_all_zero_in_array_to_end.cs" />
+    <Compile Include="LeetCodeTop\Other\move_all_zero_in_array_to_end.cs" />
     <Compile Include="youtube\queue_using_stack.cs" />
     <Compile Include="youtube\reverse_an_array.cs" />
     <Compile Include="youtube\staircase_problem.cs" />
