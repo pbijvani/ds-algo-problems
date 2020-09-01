@@ -102,6 +102,7 @@
     <Compile Include="LeetCodeTop\Tree\minimum_depth_of_binary_tree.cs" />
     <Compile Include="LeetCodeTop\Tree\path_sum.cs" />
     <Compile Include="LeetCodeTop\Tree\sorted_array_to_bst.cs" />
+    <Compile Include="LeetCodeTop\Tree\sum_root_to_leaf.cs" />
     <Compile Include="LeetCodeTop\Tree\validate_binary_search_tree.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
     <Compile Include="Sort\MergeSort.cs" />
