@@ -49,28 +49,27 @@ namespace ds_algo_problems.LeetCodeTop.Tree
     {
         public int SumNumbers(TreeNode root)
         {
+            if (root == null)
+            {
+                return 0;
+            }
+
             var res = helper(root, 0);
             return res;
         }
 
         public int helper(TreeNode root, int runningSum)
         {
-            if(root == null)
-            {
-                return runningSum;
-            }
-            
-            var leftSum = 0;
-            var rightSum = 0;
-
             runningSum = (runningSum * 10) + root.data;
 
             if (root.left == null && root.right == null)
             {
                 return runningSum;
             }
-                        
 
+            var leftSum = 0;
+            var rightSum = 0;            
+                        
             leftSum = root.left == null ? 0 : helper(root.left, runningSum);
             rightSum = root.right == null ? 0 : helper(root.right, runningSum);
 
