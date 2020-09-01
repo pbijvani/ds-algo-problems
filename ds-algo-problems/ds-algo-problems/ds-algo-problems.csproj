@@ -81,8 +81,10 @@
     <Compile Include="LeetCodeTop\Heap\top_k_frequent_ele.cs" />
     <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
     <Compile Include="LeetCodeTop\Other\continuous_subarray_sum_multiple_of_k.cs" />
+    <Compile Include="LeetCodeTop\Other\is_subsequence.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
+    <Compile Include="LeetCodeTop\Other\next_permutation.cs" />
     <Compile Include="LeetCodeTop\Other\subarray_sums_divisible_by_k.cs" />
     <Compile Include="LeetCodeTop\recursion\k_th_symbol_in_grammer.cs" />
     <Compile Include="LeetCodeTop\recursion\powx_n.cs" />
