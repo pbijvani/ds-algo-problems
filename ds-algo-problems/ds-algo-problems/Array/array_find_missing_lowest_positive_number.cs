@@ -19,8 +19,44 @@ namespace ds_algo_problems.Array
          */
 
         // Soluntion in O(n) time and O(1) space
+
+        public int FindMissingLowestPositiveNum1(int[] array)
+        {
+            var index = 0;
+            var len = array.Length;
+
+            while (index < len)
+            {
+                var num = array[index];
+                if (num > 0 && num < len + 1)
+                {
+                    while (num > 0 && num < len + 1)
+                    {
+                        var nextIndex = num % len;
+                        num = array[nextIndex];
+                        array[nextIndex] = int.MinValue;
+                    }
+                }
+                index++;
+            }
+
+            for (int i = 0; i < len; i++)
+            {
+                if (array[i] != int.MinValue)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            return index == 0 ? len : index;
+        }
+
+
+        //Some modification to pass all leetcode test cases
         public int FindMissingLowestPositiveNum(int[] array)
         {
+            if (array.Length == 0) return 1;
             var index = 0;
             var len = array.Length;
 
@@ -38,8 +74,8 @@ namespace ds_algo_problems.Array
                 }
                 index++;
             }
-            
-            for(int i = 0; i < len; i++)
+            index = -1;
+            for(int i = 1; i < len; i++)
             {
                 if(array[i] != int.MinValue)
                 {
@@ -48,7 +84,15 @@ namespace ds_algo_problems.Array
                 }
             }
 
-            return index == 0 ? len : index;
+            if (index == -1 && array[0] != int.MinValue) index = 0;
+
+            if(index == -1)
+            {
+                return len + 1;
+            }
+            else
+                return index == 0 ? len : index;
         }
+
     }
 }
