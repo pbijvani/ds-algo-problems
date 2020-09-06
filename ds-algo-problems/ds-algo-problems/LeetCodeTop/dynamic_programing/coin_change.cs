@@ -62,6 +62,43 @@ namespace ds_algo_problems.LeetCodeTop.dynamic_programing
         }
 
         /*
+         * DP - top down approach with memorization
+         * https://leetcode.com/problems/coin-change/solution/
+         */
+
+        public int CoinChange2(int[] coins, int total)
+        {
+            var res = CoinChange2Helper(coins, total, new Dictionary<int, int>());
+
+            return res;
+        }
+
+        public int CoinChange2Helper(int[] coins, int remaining, Dictionary<int, int> mem)
+        {
+            if (remaining < 0) return -1;
+
+            if (remaining == 0) return 0;
+
+            if (mem.ContainsKey(remaining)) return mem[remaining];
+
+            var minNumberOfCoin = int.MaxValue;
+
+            foreach(var coin in coins)
+            {
+                int res = CoinChange2Helper(coins, remaining - coin, mem);
+
+                if(res >= 0 && res < minNumberOfCoin)
+                {
+                    minNumberOfCoin = 1 + res;
+                }
+            }
+
+            mem.Add(remaining, minNumberOfCoin == int.MaxValue ? -1 : minNumberOfCoin);
+
+            return mem[remaining];
+        }
+
+        /*
          * same as above, just instead of 2d array we are using 1d array
          * Time complexity - O(coins.size * total)
          * Space complexity - O(total)         
@@ -69,27 +106,26 @@ namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 
         public int CoinChange1(int[] coins, int total)
         {
-            var T = new int[total + 1];
-            T[0] = 0;
+            var dp = new int[total + 1];
+            dp[0] = 0;
 
             for (int i = 1; i <= total; i++)
             {
-                T[i] = int.MaxValue - 1;
+                dp[i] = int.MaxValue - 1;
             }
             for (int j = 0; j < coins.Length; j++)
             {
-                for (int i = 1; i <= total; i++)
+                for (int amt = 1; amt <= total; amt++)
                 {
-                    if (i >= coins[j])
+                    var currCoinVal = coins[j];
+
+                    if (amt >= currCoinVal)
                     {
-                        if (T[i - coins[j]] + 1 < T[i])
-                        {
-                            T[i] = 1 + T[i - coins[j]];
-                        }
+                        dp[amt] = System.Math.Min(dp[amt], dp[amt - currCoinVal] + 1);
                     }
                 }
             }
-            return T[total];
+            return dp[total];
         }
 
         public void test()
@@ -106,7 +142,7 @@ namespace ds_algo_problems.LeetCodeTop.dynamic_programing
 
             //var amt = 11;
 
-            var res = CoinChange(coins, amt);
+            var res = CoinChange1(coins, amt);
         }
     }
 }
