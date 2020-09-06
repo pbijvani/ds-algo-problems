@@ -82,6 +82,7 @@
     <Compile Include="LeetCodeTop\LinkedList\remove_duplicate_variant.cs" />
     <Compile Include="LeetCodeTop\Other\continuous_subarray_sum_multiple_of_k.cs" />
     <Compile Include="LeetCodeTop\Other\is_subsequence.cs" />
+    <Compile Include="LeetCodeTop\Other\max_consecutive_ones_ii.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room.cs" />
     <Compile Include="LeetCodeTop\Other\meeting_room_ii.cs" />
     <Compile Include="LeetCodeTop\Other\next_permutation.cs" />

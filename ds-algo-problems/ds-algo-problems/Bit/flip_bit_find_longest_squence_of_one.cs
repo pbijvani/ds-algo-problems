@@ -9,7 +9,8 @@ namespace ds_algo_problems.Bit
     public class flip_bit_find_longest_squence_of_one
     {
         /*
-         * you are given an integer and you can flip one bit from zero to one in a way to find longest subsequence of one
+         * you are given an integer and you can flip one bit from zero to one 
+         * in a way to find longest subsequence of one
          * this runs in O(b) where b is the element in sequence and O(b) space`
          */
 
