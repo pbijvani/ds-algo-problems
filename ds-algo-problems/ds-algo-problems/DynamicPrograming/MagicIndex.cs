@@ -8,6 +8,7 @@ namespace ds_algo_problems.DynamicPrograming
 {
     /*
      * Find Magic Index. A[i] = i 
+     * https://www.geeksforgeeks.org/find-a-fixed-point-in-a-given-array/
      */
 
     public class MagicIndex
