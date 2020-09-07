@@ -17,6 +17,9 @@ namespace ds_algo_problems._Modrate.Array
          * {1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19}
          * 
          * Ans : 4-9
+         * 
+         * https://leetcode.com/problems/shortest-unsorted-continuous-subarray/solution/
+         * 
          */
         public void SubSort(int[] input)
         {
