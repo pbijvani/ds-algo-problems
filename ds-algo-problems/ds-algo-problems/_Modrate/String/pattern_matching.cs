@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems._Modrate.String
 {
+    /*
+     * https://leetcode.com/problems/word-pattern/submissions/
+     */
     public class pattern_matching
     {
         public bool MatchPattern(string input, string pattern)
@@ -105,6 +108,41 @@ namespace ds_algo_problems._Modrate.String
             {
                 return -1;
             }
+        }
+
+        public bool WordPattern(string pattern, string str)
+        {
+            var words = str.Split(' ').ToList();
+            var dict = new Dictionary<char, string>();
+            var set = new HashSet<string>();
+
+            if (words.Count != pattern.Length) return false;
+
+            for(int i = 0; i < pattern.Length; i++)
+            {
+                var ch = pattern[i];
+
+                if(dict.ContainsKey(ch))
+                {
+                    if(words[i] != dict[ch])
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (set.Contains(words[i])) return false;
+                    dict.Add(ch, words[i]);
+                    set.Add(words[i]);
+                }
+            }
+
+            return true;
+        }
+
+        public void test()
+        {
+            var res = WordPattern("abba", "dog cat cat dog");
         }
     }
 }
