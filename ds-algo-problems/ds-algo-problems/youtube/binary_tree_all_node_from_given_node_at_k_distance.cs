@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.youtube
 {
+    //https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/submissions/
     public class binary_tree_all_node_from_given_node_at_k_distance
     {
         public void NodeAtKDistance(TreeNode root, TreeNode start, int k)
@@ -98,6 +99,68 @@ namespace ds_algo_problems.youtube
 
             NodeAtKDistance(root, start, 2);
 
+        }
+    }
+
+    public class DistanceK
+    {
+        private List<int> ans;
+        TreeNode target;
+        int k;
+        public List<int> distanceK(TreeNode root, TreeNode _target, int K)
+        {
+            ans = new List<int>();
+            target = _target;
+            k = K;
+
+            dfs(root);
+
+            return ans;
+        }
+
+        private int dfs(TreeNode root)
+        {
+            if(root == null)
+            {
+                return -1;
+            }
+            else if(root == target)
+            {
+                subtree_add(root, 0);
+                return 1;
+            }
+            else
+            {
+                var L = dfs(root.left);
+                var R = dfs(root.right);
+
+                if(L != -1)
+                {
+                    if (L == k) ans.Add(root.data);
+                    subtree_add(root.right, L + 1);
+                    return L + 1;
+                }
+                else if(R != -1)
+                {
+                    if (R == k) ans.Add(root.data);
+                    subtree_add(root.left, R + 1);
+                    return R + 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+        }
+
+        private void subtree_add(TreeNode root, int dist)
+        {
+            if (root == null) return;
+
+            if (dist == k) ans.Add(root.data);
+
+            subtree_add(root.left, dist + 1);
+            subtree_add(root.right, dist + 1);
         }
     }
 
