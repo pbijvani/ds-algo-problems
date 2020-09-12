@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ds_algo_problems.youtube
 {
     public class cycle_in_a_array
-    {
+    {   
         /*
          * you are given an array
          * you need to traverse in a array with below rule
@@ -77,7 +77,9 @@ namespace ds_algo_problems.youtube
             Input: [-2,1,-1,-2,-2]
             Output: false
             Explanation: The movement from index 1 -> 2 -> 1 -> ... is not a cycle, because movement from index 1 -> 2 is a forward movement, but movement from index 2 -> 1 is a backward movement. All movements in a cycle must follow a single direction.
-         */
+         
+             https://leetcode.com/problems/circular-array-loop/
+            */
 
 
         public bool HasCycleDFS(int[] array)
