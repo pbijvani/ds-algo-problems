@@ -47,5 +47,39 @@ namespace ds_algo_problems.youtube
 
             return result;
         }
+
+        public int num_ways(string data)
+        {
+            var memo = new int[data.Length];
+
+            for(int i = 0; i < data.Length; i++)
+            {
+                memo[i] = -1;
+            }
+
+            return helper(data, data.Length, memo);
+        }
+
+        public int helper(string data, int k, int[] memo)
+        {
+            if (k == 0) return 1;
+
+            var startIndex = data.Length - k;
+
+            if (data[startIndex] == '0') return 0;
+
+            if (memo[k] != -1) return memo[k];
+
+            var result = helper(data, k - 1, memo);
+
+            if(k >= 2 && Convert.ToInt32(data.Substring(startIndex, 2)) <= 26)
+            {
+                result = result + helper(data, k - 1, memo);
+            }
+
+            memo[k] = result;
+
+            return result;
+        }
     }
 }
