@@ -8,6 +8,7 @@ namespace ds_algo_problems.Problems
 {
     public class overlaping_rectangles
     {
+        //https://leetcode.com/problems/rectangle-overlap/solution/
         public int CalculateOverlapArea(Rectangle r1, Rectangle r2)
         {
             int xOverlapSize = 0;
