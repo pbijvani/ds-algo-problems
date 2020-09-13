@@ -13,6 +13,9 @@ https://www.freecodecamp.org/news/coding-interviews-for-dummies-5e048933b82b/
 Leetcode locked
 http://tiancao.me/Leetcode-Unlocked/index.html
 
+Amazon Online Assessment Questions 2020
+https://aonecode.com/amazon-online-assessment-questions
+
 50 questions
 https://www.byte-by-byte.com/coding-interview-questions/all/
 https://bradfieldcs.com/algos/graphs/word-ladder/
