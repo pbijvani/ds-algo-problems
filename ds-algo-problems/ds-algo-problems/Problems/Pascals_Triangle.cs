@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ds_algo_problems.Problems
 {
+    //https://leetcode.com/problems/pascals-triangle/
     class Pascals_Triangle
     {
         public List<List<int>> generate(int numRows)
