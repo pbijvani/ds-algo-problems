@@ -163,5 +163,55 @@ namespace ds_algo_problems.Problems
             }
             return 0;
         }
+
+        /*
+         * Update on : 9/12/2020
+         * Seems above solution might not work for all cases.
+         * We can solve it using sorted array and two pointer approach
+         * 
+         * not tested yet
+         * 
+         * https://leetcode.com/discuss/interview-question/313719/Amazon-or-Online-Assessment-2019-or-Movies-on-Flight
+         * 
+         * O (n log n)
+         */
+
+        public int[] FindMovies(int[] movies, int d)
+        {
+            System.Array.Sort(movies);
+            var len = movies.Length;
+            var left = 0;
+            var right = len - 1;
+
+            d = d - 30;
+
+            var maxDuration = 0;
+            var i = -1;
+            var j = -1;
+
+            while(left < right)
+            {
+                var sum = movies[left] + movies[right];
+
+                if(sum <= d && (sum > maxDuration || (sum == maxDuration && System.Math.Max(movies[left], movies[right]) > System.Math.Max(movies[i], movies[j]))))
+                {
+                    maxDuration = sum;
+                    i = left;
+                    j = right;
+                }
+
+                if(sum > d)
+                {
+                    right--;
+                }
+                else
+                {
+                    left++;
+                }
+            }
+
+            return new int[] { i, j };
+        }
+
     }
 }
