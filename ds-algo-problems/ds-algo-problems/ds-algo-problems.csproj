@@ -106,6 +106,7 @@
     <Compile Include="LeetCodeTop\Tree\sum_root_to_leaf.cs" />
     <Compile Include="LeetCodeTop\Tree\validate_binary_search_tree.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
+    <Compile Include="Problems\amazon_OA_2020_1.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
     <Compile Include="_Modrate\Array\container_with_most_water.cs" />
