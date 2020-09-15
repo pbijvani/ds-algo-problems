@@ -109,6 +109,8 @@
     <Compile Include="Problems\amazon_OA_2020_1.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
+    <Compile Include="Tree\subtree_with_maximum_avg.cs" />
+    <Compile Include="Tree\subtree_with_maximum_sum.cs" />
     <Compile Include="_Modrate\Array\container_with_most_water.cs" />
     <Compile Include="Array\find_contiguous_path_target_sum.cs" />
     <Compile Include="Array\Find_k_closest_elements_of_given_number_in_array.cs" />
