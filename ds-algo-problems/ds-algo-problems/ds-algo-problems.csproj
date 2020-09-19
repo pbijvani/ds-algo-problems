@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="amazon_online_assessment_problems\critical_routers.cs" />
     <Compile Include="Array\Amazon_que_array_find_2_element_Total_close_to_given_number.cs" />
     <Compile Include="Array\array_find_missing_lowest_positive_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
@@ -106,7 +107,7 @@
     <Compile Include="LeetCodeTop\Tree\sum_root_to_leaf.cs" />
     <Compile Include="LeetCodeTop\Tree\validate_binary_search_tree.cs" />
     <Compile Include="Matrix\flood_fill.cs" />
-    <Compile Include="Problems\amazon_OA_2020_1.cs" />
+    <Compile Include="amazon_online_assessment_problems\amazon_OA_2020_1.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
     <Compile Include="Tree\subtree_with_maximum_avg.cs" />
