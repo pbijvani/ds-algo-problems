@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="amazon_online_assessment_problems\critical_routers.cs" />
     <Compile Include="amazon_online_assessment_problems\partition_label.cs" />
+    <Compile Include="amazon_online_assessment_problems\split_string_into_unique_prime.cs" />
     <Compile Include="amazon_online_assessment_problems\trie_search_suggession.cs" />
     <Compile Include="amazon_online_assessment_problems\two_dimension_get_two_closest_point.cs" />
     <Compile Include="Array\Amazon_que_array_find_2_element_Total_close_to_given_number.cs" />
