@@ -46,6 +46,7 @@
     <Compile Include="amazon_online_assessment_problems\critical_routers.cs" />
     <Compile Include="amazon_online_assessment_problems\partition_label.cs" />
     <Compile Include="amazon_online_assessment_problems\trie_search_suggession.cs" />
+    <Compile Include="amazon_online_assessment_problems\two_dimension_get_two_closest_point.cs" />
     <Compile Include="Array\Amazon_que_array_find_2_element_Total_close_to_given_number.cs" />
     <Compile Include="Array\array_find_missing_lowest_positive_number.cs" />
     <Compile Include="Array\Array_of_Integer_Every_Elem_appear_twice_except_one_find_one.cs" />
@@ -114,6 +115,7 @@
     <Compile Include="amazon_online_assessment_problems\amazon_OA_2020_1.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="String\common_word.cs" />
+    <Compile Include="Tree\bst_lowest_common_anscestor.cs" />
     <Compile Include="Tree\subtree_with_maximum_avg.cs" />
     <Compile Include="Tree\subtree_with_maximum_sum.cs" />
     <Compile Include="_Modrate\Array\container_with_most_water.cs" />
