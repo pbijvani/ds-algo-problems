@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace ds_algo_problems.Problems
 {
     /*
+     * Find Related Products
+     * 
      * https://leetcode.com/discuss/interview-question/782606/
+     * https://aonecode.com/amazon-online-assessment-find-related-books
      * 
      * Amazon online assessment problem
      */
