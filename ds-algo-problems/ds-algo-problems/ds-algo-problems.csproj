@@ -49,6 +49,7 @@
     <Compile Include="amazon_online_assessment_problems\longest_string_made_up_of_only_vowels.cs" />
     <Compile Include="amazon_online_assessment_problems\maximum_minimum_value_path.cs" />
     <Compile Include="amazon_online_assessment_problems\maximum_minimum_value_path_ii.cs" />
+    <Compile Include="amazon_online_assessment_problems\min_cost_to_connect_ropes.cs" />
     <Compile Include="amazon_online_assessment_problems\partition_label.cs" />
     <Compile Include="amazon_online_assessment_problems\secret_fruit_list.cs" />
     <Compile Include="amazon_online_assessment_problems\split_string_into_unique_prime.cs" />
