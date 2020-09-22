@@ -46,6 +46,7 @@
     <Compile Include="amazon_online_assessment_problems\create_teams.cs" />
     <Compile Include="amazon_online_assessment_problems\critical_routers.cs" />
     <Compile Include="amazon_online_assessment_problems\load_balancer.cs" />
+    <Compile Include="amazon_online_assessment_problems\longest_string_made_up_of_only_vowels.cs" />
     <Compile Include="amazon_online_assessment_problems\maximum_minimum_value_path.cs" />
     <Compile Include="amazon_online_assessment_problems\maximum_minimum_value_path_ii.cs" />
     <Compile Include="amazon_online_assessment_problems\partition_label.cs" />
